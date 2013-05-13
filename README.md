@@ -8,7 +8,7 @@ A collection of aliases with for browsers, services and virtual machine images c
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
 
 ## [Android](http://developer.android.com) (VM)
-Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2).
+Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app?raw=true) (Comes with Android 4.2.2).
 ### Create and Run an Android Virtual Device (AVD)
 1. Go to `Tools > Managa AVDs`
 2. Click `New...`
@@ -21,9 +21,9 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [Chrome](http://www.google.com/chrome) (Mac)
 - [Chrome](http://www.chromium.org/getting-involved/dev-channel) Stable, Dev, Canary
-- [Chrome Incognito](Google%20Chrome%20Incognito.app) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
+- [Chrome Incognito](Google%20Chrome%20Incognito.app?raw=true) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
-- [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api.
+- [Chromium Benchmark](Google%20Chrome%20Incognito.app?raw=true) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api.
 
 ### [Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
 - [Adobe Edge Inspect](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
@@ -68,7 +68,7 @@ Additional Dev tools like [Opera Mobile](http://www.opera.com/developer/mobile-e
 
 ## [Safari](http://www.apple.com/safari/)
 It's built into Mac OS X.
-### Extensions
+### [Extensions](http://extensions.apple.com/)
 - LiveReload
 
 # Third Party Services
@@ -76,7 +76,7 @@ It's built into Mac OS X.
 ---
 
 ## [BrowserStack](http://www.browserstack.com/start)
-A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
+A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app?raw=true)
 
 ## [Sause Labs](https://saucelabs.com/)
 Can be downloaded via a [Mac Store App](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
