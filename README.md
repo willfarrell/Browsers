@@ -25,7 +25,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api.
 
-### Extensions
+### [Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
 - [Adobe Edge Inspect](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
 - [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) - Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.
 - [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
@@ -52,7 +52,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [FireFox](http://firefox.com) (Mac)
 
-### Extensions
+### (Add-Ons](https://addons.mozilla.org/en-US/firefox/)
 - LiveReload
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
