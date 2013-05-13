@@ -1,5 +1,5 @@
 # Browsers
-A collection of aliases with for browsers, services and virtual machine images can be found in the `Browsers` folder.
+A collection of aliases for browsers, services and virtual machine images can be found in the `Browsers` folder and added to your dock for easy launching.
 
 ![alt text][dockfolder]
 
