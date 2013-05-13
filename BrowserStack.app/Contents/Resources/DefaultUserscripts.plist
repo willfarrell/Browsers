@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>FUUserscripts</key>
+	<array>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>name</key>
+			<string>Reader</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>URLPattern</key>
+					<string>*google.com*reader*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>URLPattern</key>
+					<string>*reader*google.com*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+			</array>
+			<key>source</key>
+			<string>window.fluid.dockBadge = '';
+setTimeout(updateDockBadge, 1000);
+setTimeout(updateDockBadge, 3000);
+setInterval(updateDockBadge, 5000);
+
+function updateDockBadge() {
+	var newBadge = '';
+
+	var regex = /\s*\((\d+)\+?\)\s*/;
+
+	var text = '' + document.title;
+	if (text.length) {
+		console.log('text: ' + text);
+		var res = text.match(regex);
+		console.log('res: ' + res);
+		if (res &amp;&amp; res.length &gt; 1) {
+			newBadge = res[1];
+			console.log('newBadge: ' + newBadge);
+		}
+	}
+	window.fluid.dockBadge = newBadge;
+}</string>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>name</key>
+			<string>Gmail</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>URLPattern</key>
+					<string>*gmail.com*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>URLPattern</key>
+					<string>*mail.google.com*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+				<dict>
+					<key>URLPattern</key>
+					<string>*google.com*mail*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+			</array>
+			<key>source</key>
+			<string>window.fluid.dockBadge = '';
+setTimeout(updateDockBadge, 1000);
+setTimeout(updateDockBadge, 3000);
+setInterval(updateDockBadge, 5000);
+
+function updateDockBadge() {
+	var newBadge = '';
+
+	// find canvas iframe
+	var canvas = document.getElementById('canvas_frame');
+	//console.log('canvas: ' + canvas);
+
+	// get iframe document
+	var doc = canvas.contentDocument;
+	//console.log('canvas.contentDocument: ' + canvas.contentDocument);
+
+	// loop thru anchor tags
+	var anchorEls = doc.getElementsByTagName('a');
+	//console.log('anchors: ' + anchorEls.length);
+
+	var regex = /\s*Inbox\s*\((\d+)\)[^\d]*/;
+	for (var i = 0; i &lt; anchorEls.length; i++) {
+		var anchorEl = anchorEls[i];
+		//console.log('anchorEl: '+ anchorEl);
+		
+		var text = '' + anchorEl.innerText;
+		if (!text.length) continue;
+		if (-1 == text.indexOf('(')) continue;
+		var res = text.match(regex);
+		if (res &amp;&amp; res.length &gt; 1) {
+			//console.log('res: '+ res);
+			newBadge = res[1];
+			break;
+		}
+	}
+
+	window.fluid.dockBadge = newBadge;
+}
+</string>
+		</dict>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>name</key>
+			<string>Facebook</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>URLPattern</key>
+					<string>*facebook.com*</string>
+					<key>enabled</key>
+					<true/>
+				</dict>
+			</array>
+			<key>source</key>
+			<string>window.fluid.dockBadge = '';
+setTimeout(updateDockBadge, 1000);
+setTimeout(updateDockBadge, 3000);
+setInterval(updateDockBadge, 5000);
+
+function updateDockBadge() {
+	var newBadge = '';
+
+	var regex = /\s*\((\d+)\)\s*/;
+
+	var text = '' + document.title;
+	if (text.length) {
+		console.log('text: ' + text);
+		var res = text.match(regex);
+		console.log('res: ' + res);
+		if (res &amp;&amp; res.length &gt; 1) {
+			newBadge = res[1];
+			console.log('newBadge: ' + newBadge);
+		}
+	}
+	window.fluid.dockBadge = newBadge;
+}</string>
+		</dict>
+	</array>
+</dict>
+</plist>

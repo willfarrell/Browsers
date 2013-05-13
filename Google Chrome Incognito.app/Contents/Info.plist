@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Google Chrome Incognito</string>
+	<key>CFBundleExecutable</key>
+	<string>Google Chrome Incognito</string>
+	<key>CFBundleIconFile</key>
+	<string>appIcon.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.informationkinematics.GoogleChromeIncognito</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Google Chrome Incognito</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleVersion</key>
+	<string>0.0.4</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.5.0</string>
+	<key>LSUIElement</key>
+	<false/>
+	<key>NSHumanReadableCopyright</key>
+	<string>© 2013 Adrian Zaugg under GNU GPL v.2</string>
+	<key>NSMainNibFile</key>
+	<string>MainMenu</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+</dict>
+</plist>

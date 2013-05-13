@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Default (Automatically Chosen)</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X %d_%d_%d) AppleWebKit/%@ (KHTML, like Gecko) %@ Version/%@ Safari/%@</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Safari 5.1.7 — Mac</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_4) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Safari 5.1.7 — Windows</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (Windows; U; Windows NT 6.1; en-us) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>iOS Safari 5.0 — iPhone</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (iPhone; CPU iPhone OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>iOS Safari 5.0 — iPad</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Internet Explorer 9.0</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Internet Explorer 8.0</string>
+		<key>value</key>
+		<string>Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0)</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Firefox 4.0.1 — Mac</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:2.0.1) Gecko/20100101 Firefox/4.0.1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Firefox 4.0.1 — Windows</string>
+		<key>value</key>
+		<string>Mozilla/5.0 (Windows NT 6.1; rv:2.0.1) Gecko/20100101 Firefox/4.0.1</string>
+	</dict>
+</array>
+</plist>

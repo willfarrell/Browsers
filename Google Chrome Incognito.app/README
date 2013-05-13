@@ -1,0 +1,47 @@
+
+2013/01/06
+
+
+Google Chrome Incognito v0.0.4
+
+
+You may use Google Chrome Incognito application to start Chrome in
+"incognito" mode showing a blank window. It finds Google Chrome.app
+by querying OS X's central metadata store.
+
+Features:
+* opens a new incognito window whether Chrome is open or not
+* does not stay in the dock when Chrome has been started
+* shows the new window with a blank page
+* finds Chrome from every where in any location 
+  (or just put it next to Chrome, if it doesn't)
+* Chrome update resistent
+* open source
+
+Requirements:
+Google Chrome Incognito is an application for Mac OS X 10.5 or higher.
+
+Download:
+http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/
+
+Source:
+Included in the distribution dmg file.
+
+Feedback:
+Please use the web form under http://ente.limmat.ch/feedback/.
+
+Important note:
+Please consider installing Ghostery or something similar to protect 
+your privacy. See http://en.wikipedia.org/wiki/Ghostery for more information.
+
+
+Enjoy, Adrian.
+
+
+
+(c) 2012-2013 by Adrian Zaugg under GNU GPL v2 (https://www.gnu.org/licenses/gpl-2.0.html)
+
+Credits:
+created with Platypus (http://sveinbjorn.org/platypus)
+icon from Ben
+(http://myquickfix.co.uk/2011/10/launch-google-chrome-in-incognito-from-terminal-or-a-shortcut-in-os-x/)

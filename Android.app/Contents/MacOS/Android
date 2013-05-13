@@ -1,0 +1,3 @@
+#!/bin/sh
+cd /Applications/Android.app
+sh sdk/tools/android

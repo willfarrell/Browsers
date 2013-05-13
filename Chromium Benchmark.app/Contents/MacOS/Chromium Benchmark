@@ -1,0 +1,2 @@
+#!
+/Applications/Chromium.app/Contents/MacOS/Chromium --enable-benchmarking --enable-stats-table --enable-extension-timeline-api&
