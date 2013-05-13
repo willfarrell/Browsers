@@ -8,14 +8,20 @@ A collection of aliases with for browsers, services and virtual machine images c
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
 
 ## [Android](http://developer.android.com) (VM)
-Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app).
+Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2).
+### Create and Run an Android Virtual Device (AVD)
+1. Go to `Tools > Managa AVDs`
+2. Click `New...`
+3. Enter `AVD Name`, `Device`, `Target` and any other additional setting you need. Click `OK`.
+4. Select AVD from list and click `Start...`
+
 
 ## [BlackBerry](http://developer.blackberry.com) (VM)
 VMware Fusion is required, virtual machines can be found at [developer.blackberry.com](http://developer.blackberry.com/devzone/develop/simulator/simulator_installing.html).
 
 ## [Chrome](http://www.google.com/chrome) (Mac)
 - [Chrome](http://www.chromium.org/getting-involved/dev-channel) Stable, Dev, Canary
-- [Chrome Incognito](Google%20Chrome%20Incognito.app) - Direct opening on an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
+- [Chrome Incognito](Google%20Chrome%20Incognito.app) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api.
 
