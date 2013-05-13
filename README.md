@@ -8,7 +8,7 @@ A collection of aliases with for browsers, services and virtual machine images c
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
 
 ## [Android](http://developer.android.com) (VM)
-Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app?raw=true) (Comes with Android 4.2.2). Made with [appify](https://gist.github.com/mathiasbynens/674099).
+Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2). Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### Create and Run an Android Virtual Device (AVD)
 1. Go to `Tools > Managa AVDs`
@@ -22,9 +22,9 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [Chrome](http://www.google.com/chrome) (Mac)
 - [Chrome](http://www.chromium.org/getting-involved/dev-channel) Stable, Dev, Canary
-- [Chrome Incognito](Google%20Chrome%20Incognito.app?raw=true) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
+- [Chrome Incognito](Google%20Chrome%20Incognito.app) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
-- [Chromium Benchmark](Google%20Chrome%20Incognito.app?raw=true) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
+- [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### [Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
 - [Adobe Edge Inspect](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
@@ -72,20 +72,19 @@ It's built into Mac OS X.
 ### [Extensions](http://extensions.apple.com/)
 - LiveReload
 
-# Third Party Services
-
 ---
 
+# Third Party Services
+
 ## [BrowserStack](http://www.browserstack.com/start)
-A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app?raw=true)
+A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
 
 ## [Sause Labs](https://saucelabs.com/)
 Can be downloaded via a [Mac Store App](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
 
+---
 
 # Continuous Integration (CI)
-
----
 
 ## [karma](http://karma-runner.github.io/0.8/index.html)
 The main goal for Karma is to bring a productive testing environment to developers. An environment, where they don't have to set up many things and rather just write the code and get an instant feedback. Because getting a quick feedback is what makes you productive and creative. Requires [nodejs](http://nodejs.org/download/), and works great with [grunt](http://gruntjs.com/getting-started).
@@ -98,8 +97,6 @@ An extendable open source continuous integration server
 
 ## [Mac mini CI](https://github.com/angular/ci.angularjs.org)
 Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE)
-
----
 
 - [Fluid](http://fluidapp.com/) ($4.99)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ($0)
