@@ -53,7 +53,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [FireFox](http://firefox.com) (Mac)
 
-### (Add-Ons](https://addons.mozilla.org/en-US/firefox/)
+### [Add-Ons](https://addons.mozilla.org/en-US/firefox/)
 - LiveReload
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
@@ -72,7 +72,6 @@ It's built into Mac OS X.
 ### [Extensions](http://extensions.apple.com/)
 - LiveReload
 
----
 
 # Third Party Services
 
@@ -80,9 +79,8 @@ It's built into Mac OS X.
 A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
 
 ## [Sause Labs](https://saucelabs.com/)
-Can be downloaded via a [Mac Store App](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
+Can be downloaded from the [Mac Store](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
 
----
 
 # Continuous Integration (CI)
 
@@ -97,6 +95,8 @@ An extendable open source continuous integration server
 
 ## [Mac mini CI](https://github.com/angular/ci.angularjs.org)
 Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE)
+
+---
 
 - [Fluid](http://fluidapp.com/) ($4.99)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ($0)
