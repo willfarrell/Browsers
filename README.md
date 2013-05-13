@@ -1,6 +1,8 @@
 # Browsers
 A collection of aliases with for browsers, services and virtual machine images can be found in the `Browsers` folder.
 
+![alt text][dockfolder]
+
 ---
 
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
@@ -79,7 +81,7 @@ Can be downloaded via a [Mac Store App](https://itunes.apple.com/ca/app/sauce/id
 ---
 
 ## [karma](http://karma-runner.github.io/0.8/index.html)
-The main goal for Karma is to bring a productive testing environment to developers. An environment, where they don't have to set up many things and rather just write the code and get an instant feedback. Because getting a quick feedback is what makes you productive and creative.
+The main goal for Karma is to bring a productive testing environment to developers. An environment, where they don't have to set up many things and rather just write the code and get an instant feedback. Because getting a quick feedback is what makes you productive and creative. Requires [nodejs](http://nodejs.org/download/), and works great with [grunt](http://gruntjs.com/getting-started).
 
 ## [Travis CI](https://travis-ci.org/)
 A hosted continuous integration service for the open source community.
@@ -95,4 +97,6 @@ Shell scripts and configuration files used by the Google AngularJS Team. [Video]
 - [Fluid](http://fluidapp.com/) ($4.99)
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ($0)
 - [VMware Fusion](http://www.vmware.com/products/fusion/overview.html) ($50 - $100)
+
+[dockfolder]: ./dock-folder.png "Bowser Alias Folder"
  
