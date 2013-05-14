@@ -94,7 +94,7 @@ A hosted continuous integration service for the open source community.
 An extendable open source continuous integration server
 
 ## [Mac mini CI](https://github.com/angular/ci.angularjs.org)
-Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE)
+Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
 
 ---
 
@@ -102,5 +102,5 @@ Shell scripts and configuration files used by the Google AngularJS Team. [Video]
 - [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ($0)
 - [VMware Fusion](http://www.vmware.com/products/fusion/overview.html) ($50 - $100)
 
-[dockfolder]: ./dock-folder.png "Bowser Alias Folder"
+[dockfolder]: ./dock-folder.png "Browser Alias Folder"
  
