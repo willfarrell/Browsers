@@ -42,7 +42,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - Provides Chrome browser integration for the official LiveReload apps (Mac & Windows) and third-parties like guard-livereload and…
 - [My Travis](https://chrome.google.com/webstore/detail/my-travis/ddlafmkcenhiahiikbgjemcbdengmjbg) - Monitor your projects builds from Travis CI within Chrome.
 - [Page Benchmarker](https://chrome.google.com/webstore/detail/page-benchmarker/channimfdomahekjcahlbpccbgaopjll/details?hl=en) - Chromium Page Benchmarker.
-- [PageSpeed Insights](https://developers.google.com/speed/docs/insights/using_chrome) - Extends the Developer Tools, adding PageSpeed.
+- [PageSpeed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
 - [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
 - [Pretty Beautify Javascript](https://chrome.google.com/webstore/detail/pretty-beautiful-javascri/piekbefgpgdecckjcpffhnacjflfoddg) - Automatically makes Javascript files pretty and beautiful!
 - [Responsive Inspector](https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim) - Responsive Inspector allows inspecting page media queries.
