@@ -7,7 +7,7 @@ A collection of aliases for browsers, services and virtual machine images can be
 
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
 
-## [Android](http://developer.android.com) (VM)
+## [Android](http://developer.android.com) (VM/Appify)
 Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2). Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### Create and Run an Android Virtual Device (AVD)
@@ -20,7 +20,7 @@ Download from [developer.android.com](http://developer.android.com/sdk/index.htm
 ## [BlackBerry](http://developer.blackberry.com) (VM)
 VMware Fusion is required, virtual machines can be found at [developer.blackberry.com](http://developer.blackberry.com/devzone/develop/simulator/simulator_installing.html).
 
-## [Chrome](http://www.google.com/chrome) (Mac)
+## [Chrome](http://www.google.com/chrome) (Mac/Appify)
 - [Chrome](http://www.chromium.org/getting-involved/dev-channel) Stable, Dev, Canary
 - [Chrome Incognito](Google%20Chrome%20Incognito.app) - Direct opening of an Incognito window. [source](http://ente.limmat.ch/ftp/pub/software/applications/GoogleChromeIncognito/)
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
@@ -67,7 +67,10 @@ If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en
 ## [Opera](http://www.opera.com/) (Mac)
 Additional Dev tools like [Opera Mobile](http://www.opera.com/developer/mobile-emulator) can be found at [dev.opera.com](http://dev.opera.com/).
 
-## [Safari](http://www.apple.com/safari/)
+## [PhantomJS](http://phantomjs.org/) (Appify)
+Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/).
+
+## [Safari](http://www.apple.com/safari/) (Mac)
 It's built into Mac OS X.
 ### [Extensions](http://extensions.apple.com/)
 - LiveReload
