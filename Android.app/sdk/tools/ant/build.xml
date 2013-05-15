@@ -71,6 +71,7 @@
     <property name="java.target" value="1.5" />
     <property name="java.source" value="1.5" />
     <property name="java.compilerargs" value="" />
+    <property name="java.compiler.classpath" value="" />
 
     <!-- Renderscript options -->
     <property name="renderscript.debug.opt.level" value="O0" />
@@ -102,7 +103,7 @@
 
     <!-- jar file from where the tasks are loaded -->
     <path id="android.antlibs">
-        <pathelement path="${sdk.dir}/tools/lib/anttasks.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/ant-tasks.jar" />
     </path>
 
     <!-- Custom tasks -->
@@ -154,17 +155,7 @@
     <condition property="bat" value=".bat" else=""><os family="windows" /></condition>
     <property name="adb" location="${android.platform.tools.dir}/adb${exe}" />
     <property name="zipalign" location="${android.tools.dir}/zipalign${exe}" />
-    <property name="aidl" location="${android.platform.tools.dir}/aidl${exe}" />
-    <property name="aapt" location="${android.platform.tools.dir}/aapt${exe}" />
-    <property name="dx" location="${android.platform.tools.dir}/dx${bat}" />
-    <property name="renderscript" location="${android.platform.tools.dir}/llvm-rs-cc${exe}"/>
     <property name="lint" location="${android.tools.dir}/lint${bat}" />
-
-    <!-- Renderscript include Path -->
-    <path id="android.renderscript.include.path">
-        <pathelement location="${android.platform.tools.dir}/renderscript/include" />
-        <pathelement location="${android.platform.tools.dir}/renderscript/clang-include" />
-    </path>
 
     <!-- Intermediate files -->
     <property name="dex.file.name" value="classes.dex" />
@@ -484,6 +475,18 @@
 
     <!-- Pre build setup -->
     <target name="-build-setup" depends="-setup">
+        <!-- find location of build tools -->
+        <getbuildtools name="android.build.tools.dir" />
+        <property name="aidl" location="${android.build.tools.dir}/aidl${exe}" />
+        <property name="aapt" location="${android.build.tools.dir}/aapt${exe}" />
+        <property name="dx" location="${android.build.tools.dir}/dx${bat}" />
+        <property name="renderscript" location="${android.build.tools.dir}/llvm-rs-cc${exe}"/>
+
+        <!-- Renderscript include Path -->
+        <path id="android.renderscript.include.path">
+            <pathelement location="${android.platform.tools.dir}/renderscript/include" />
+            <pathelement location="${android.platform.tools.dir}/renderscript/clang-include" />
+        </path>
 
         <!-- read the previous build mode -->
         <property file="${out.build.prop.file}" />
@@ -712,6 +715,7 @@
             <path id="project.javac.classpath">
                 <path refid="project.all.jars.path" />
                 <path refid="tested.project.classpath" />
+                <path path="${java.compiler.classpath}" />
             </path>
             <javac encoding="${java.encoding}"
                     source="${java.source}" target="${java.target}"

@@ -53,7 +53,7 @@
 
     <!-- jar file from where the tasks are loaded -->
     <path id="android.antlibs">
-        <pathelement path="${sdk.dir}/tools/lib/anttasks.jar" />
+        <pathelement path="${sdk.dir}/tools/lib/ant-tasks.jar" />
     </path>
 
     <!-- Custom tasks -->
@@ -94,7 +94,6 @@
     <condition property="exe" value=".exe" else=""><os family="windows" /></condition>
     <condition property="bat" value=".bat" else=""><os family="windows" /></condition>
     <property name="adb" location="${android.platform.tools.dir}/adb${exe}" />
-    <property name="dx" location="${android.platform.tools.dir}/dx${bat}" />
 
     <!-- Intermediate files -->
     <property name="dex.file.name" value="classes.dex" />
@@ -153,6 +152,8 @@
 
     <!-- Pre build setup -->
     <target name="-build-setup" depends="-check-env">
+        <getbuildtools name="android.build.tools.dir" />
+        <property name="dx" location="${android.build.tools.dir}/dx${bat}" />
 
         <echo level="info">Resolving Build Target for ${ant.project.name}...</echo>
         <!-- load project properties, resolve Android target, library dependencies

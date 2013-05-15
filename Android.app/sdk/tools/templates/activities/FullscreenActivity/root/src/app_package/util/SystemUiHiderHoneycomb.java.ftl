@@ -64,7 +64,7 @@ public class SystemUiHiderHoneycomb extends SystemUiHiderBase {
             mShowFlags |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
             mHideFlags |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                     | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
-            mTestFlags = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+            mTestFlags |= View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         }
     }
 

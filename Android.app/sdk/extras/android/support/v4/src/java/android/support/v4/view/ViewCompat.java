@@ -22,6 +22,7 @@ import android.os.Bundle;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.support.v4.view.accessibility.AccessibilityNodeProviderCompat;
 import android.view.View;
+import android.view.ViewParent;
 import android.view.accessibility.AccessibilityEvent;
 
 /**
@@ -111,6 +112,28 @@ public class ViewCompat {
      */
     public static final int LAYER_TYPE_HARDWARE = 2;
 
+    /**
+     * Horizontal layout direction of this view is from Left to Right.
+     */
+    public static final int LAYOUT_DIRECTION_LTR = 0;
+
+    /**
+     * Horizontal layout direction of this view is from Right to Left.
+     */
+    public static final int LAYOUT_DIRECTION_RTL = 1;
+
+    /**
+     * Horizontal layout direction of this view is inherited from its parent.
+     * Use with {@link #setLayoutDirection}.
+     */
+    public static final int LAYOUT_DIRECTION_INHERIT = 2;
+
+    /**
+     * Horizontal layout direction of this view is from deduced from the default language
+     * script for the locale. Use with {@link #setLayoutDirection}.
+     */
+    public static final int LAYOUT_DIRECTION_LOCALE = 3;
+
     interface ViewCompatImpl {
         public boolean canScrollHorizontally(View v, int direction);
         public boolean canScrollVertically(View v, int direction);
@@ -133,7 +156,11 @@ public class ViewCompat {
         public void setLayerType(View view, int layerType, Paint paint);
         public int getLayerType(View view);
         public int getLabelFor(View view);
-        public void setLabelFor(View view, int id);;
+        public void setLabelFor(View view, int id);
+        public void setLayerPaint(View view, Paint paint);
+        public int getLayoutDirection(View view);
+        public void setLayoutDirection(View view, int layoutDirection);
+        public ViewParent getParentForAccessibility(View view);
     }
 
     static class BaseViewCompatImpl implements ViewCompatImpl {
@@ -196,6 +223,7 @@ public class ViewCompat {
             return null;
         }
         public void setLayerType(View view, int layerType, Paint paint) {
+            // No-op until layers became available (HC)
         }
         public int getLayerType(View view) {
             return LAYER_TYPE_NONE;
@@ -205,6 +233,24 @@ public class ViewCompat {
         }
         public void setLabelFor(View view, int id) {
 
+        }
+        public void setLayerPaint(View view, Paint p) {
+            // No-op until layers became available (HC)
+        }
+
+        @Override
+        public int getLayoutDirection(View view) {
+            return LAYOUT_DIRECTION_LTR;
+        }
+
+        @Override
+        public void setLayoutDirection(View view, int layoutDirection) {
+            // No-op
+        }
+
+        @Override
+        public ViewParent getParentForAccessibility(View view) {
+            return view.getParent();
         }
     }
 
@@ -228,6 +274,14 @@ public class ViewCompat {
         }
         @Override public int getLayerType(View view)  {
             return ViewCompatHC.getLayerType(view);
+        }
+        @Override
+        public void setLayerPaint(View view, Paint paint) {
+            // Make sure the paint is correct; this will be cheap if it's the same
+            // instance as was used to call setLayerType earlier.
+            setLayerType(view, getLayerType(view), paint);
+            // This is expensive, but the only way to accomplish this before JB-MR1.
+            view.invalidate();
         }
     }
 
@@ -303,6 +357,11 @@ public class ViewCompat {
             }
             return null;
         }
+
+        @Override
+        public ViewParent getParentForAccessibility(View view) {
+            return ViewCompatJB.getParentForAccessibility(view);
+        }
     }
 
     static class JbMr1ViewCompatImpl extends JBViewCompatImpl {
@@ -315,6 +374,21 @@ public class ViewCompat {
         @Override
         public void setLabelFor(View view, int id) {
             ViewCompatJellybeanMr1.setLabelFor(view, id);
+        }
+
+        @Override
+        public void setLayerPaint(View view, Paint paint) {
+            ViewCompatJellybeanMr1.setLayerPaint(view, paint);
+        }
+
+        @Override
+        public int getLayoutDirection(View view) {
+            return ViewCompatJellybeanMr1.getLayoutDirection(view);
+        }
+
+        @Override
+        public void setLayoutDirection(View view, int layoutDirection) {
+            ViewCompatJellybeanMr1.setLayoutDirection(view, layoutDirection);
         }
     }
 
@@ -753,5 +827,85 @@ public class ViewCompat {
      */
     public static void setLabelFor(View view, int labeledId) {
         IMPL.setLabelFor(view, labeledId);
+    }
+
+    /**
+     * Updates the {@link Paint} object used with the current layer (used only if the current
+     * layer type is not set to {@link #LAYER_TYPE_NONE}). Changed properties of the Paint
+     * provided to {@link #setLayerType(android.view.View, int, android.graphics.Paint)}
+     * will be used the next time the View is redrawn, but
+     * {@link #setLayerPaint(android.view.View, android.graphics.Paint)}
+     * must be called to ensure that the view gets redrawn immediately.
+     *
+     * <p>A layer is associated with an optional {@link android.graphics.Paint}
+     * instance that controls how the layer is composed on screen. The following
+     * properties of the paint are taken into account when composing the layer:</p>
+     * <ul>
+     * <li>{@link android.graphics.Paint#getAlpha() Translucency (alpha)}</li>
+     * <li>{@link android.graphics.Paint#getXfermode() Blending mode}</li>
+     * <li>{@link android.graphics.Paint#getColorFilter() Color filter}</li>
+     * </ul>
+     *
+     * <p>If this view has an alpha value set to < 1.0 by calling
+     * View#setAlpha(float), the alpha value of the layer's paint is replaced by
+     * this view's alpha value. Calling View#setAlpha(float) is therefore
+     * equivalent to setting a hardware layer on this view and providing a paint with
+     * the desired alpha value.</p>
+     *
+     * @param view View to set a layer paint for
+     * @param paint The paint used to compose the layer. This argument is optional
+     *        and can be null. It is ignored when the layer type is
+     *        {@link #LAYER_TYPE_NONE}
+     *
+     * @see #setLayerType(View, int, android.graphics.Paint)
+     */
+    public static void setLayerPaint(View view, Paint paint) {
+        IMPL.setLayerPaint(view, paint);
+    }
+
+    /**
+     * Returns the resolved layout direction for this view.
+     *
+     * @param view View to get layout direction for
+     * @return {@link #LAYOUT_DIRECTION_RTL} if the layout direction is RTL or returns
+     * {@link #LAYOUT_DIRECTION_LTR} if the layout direction is not RTL.
+     *
+     * For compatibility, this will return {@link #LAYOUT_DIRECTION_LTR} if API version
+     * is lower than Jellybean MR1 (API 17)
+     */
+    public static int getLayoutDirection(View view) {
+        return IMPL.getLayoutDirection(view);
+    }
+
+    /**
+     * Set the layout direction for this view. This will propagate a reset of layout direction
+     * resolution to the view's children and resolve layout direction for this view.
+     *
+     * @param view View to set layout direction for
+     * @param layoutDirection the layout direction to set. Should be one of:
+     *
+     * {@link #LAYOUT_DIRECTION_LTR},
+     * {@link #LAYOUT_DIRECTION_RTL},
+     * {@link #LAYOUT_DIRECTION_INHERIT},
+     * {@link #LAYOUT_DIRECTION_LOCALE}.
+     *
+     * Resolution will be done if the value is set to LAYOUT_DIRECTION_INHERIT. The resolution
+     * proceeds up the parent chain of the view to get the value. If there is no parent, then it
+     * will return the default {@link #LAYOUT_DIRECTION_LTR}.
+     */
+    public static void setLayoutDirection(View view, int layoutDirection) {
+        IMPL.setLayoutDirection(view, layoutDirection);
+    }
+
+    /**
+     * Gets the parent for accessibility purposes. Note that the parent for
+     * accessibility is not necessary the immediate parent. It is the first
+     * predecessor that is important for accessibility.
+     *
+     * @param view View to retrieve parent for
+     * @return The parent for use in accessibility inspection
+     */
+    public static ViewParent getParentForAccessibility(View view) {
+        return IMPL.getParentForAccessibility(view);
     }
 }

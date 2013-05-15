@@ -1,19 +1,23 @@
 <?xml version="1.0"?>
 <recipe>
-    <merge from="AndroidManifest.xml.ftl" />
+    <merge from="AndroidManifest.xml.ftl"
+             to="${manifestOut}/AndroidManifest.xml" />
 
-    <merge from="res/values-large/refs.xml.ftl" />
-    <merge from="res/values-sw600dp/refs.xml.ftl" />
-    <merge from="res/values/strings.xml.ftl" />
+    <merge from="res/values-large/refs.xml.ftl"
+             to="${resOut}/values-large/refs.xml" />
+    <merge from="res/values-sw600dp/refs.xml.ftl"
+             to="${resOut}/values-sw600dp/refs.xml" />
+    <merge from="res/values/strings.xml.ftl"
+             to="${resOut}/values/strings.xml" />
 
     <instantiate from="res/layout/activity_content_detail.xml.ftl"
-                   to="res/layout/activity_${detail_name}.xml" />
+                   to="${resOut}/layout/activity_${detail_name}.xml" />
     <instantiate from="res/layout/activity_content_list.xml.ftl"
-                   to="res/layout/activity_${collection_name}.xml" />
+                   to="${resOut}/layout/activity_${collection_name}.xml" />
     <instantiate from="res/layout/activity_content_twopane.xml.ftl"
-                   to="res/layout/activity_${extractLetters(objectKind?lower_case)}_twopane.xml" />
+                   to="${resOut}/layout/activity_${extractLetters(objectKind?lower_case)}_twopane.xml" />
     <instantiate from="res/layout/fragment_content_detail.xml.ftl"
-                   to="res/layout/fragment_${detail_name}.xml" />
+                   to="${resOut}/layout/fragment_${detail_name}.xml" />
 
     <instantiate from="src/app_package/ContentDetailActivity.java.ftl"
                    to="${srcOut}/${DetailName}Activity.java" />
