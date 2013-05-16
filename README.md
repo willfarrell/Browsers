@@ -26,7 +26,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
-### [Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
+### [Dev Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
 - [Adobe Edge Inspect](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
 - [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) - Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.
 - [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
@@ -50,6 +50,13 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Speed Tracer](https://chrome.google.com/webstore/detail/speed-tracer-by-google/ognampngfcbddbfemdapefohjiobgbdl) - Get insight into the performance of your web applications.
 - [YSlow](https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh) - Make your pages faster with Yahoo!'s page performance tool
 
+### [Security Extensions](https://chrome.google.com/webstore/search-extensions/security)
+- [1Password](https://agilebits.com/extensions/mac/index.html) - 1Password for Mac extension
+- [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
+- [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij) - Protect your privacy. See who's tracking your web browsing with Ghostery.
+- [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - Encrypt the Web! Automatically use HTTPS security on many sites.
+- [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) - Secure email with OpenPGP encryption for Webmail
+- [Personal Blocklist](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
 
 ## [FireFox](http://firefox.com) (Mac)
 
