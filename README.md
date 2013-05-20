@@ -82,6 +82,10 @@ It's built into Mac OS X.
 ### [Extensions](http://extensions.apple.com/)
 - LiveReload
 
+# Virtual Machines
+- [Oracle VM VirtualBox](https://www.virtualbox.org/)
+- [VMware Fusion](https://www.vmware.com/)
+- [Docker](http://docker.io) - The Linux container engine
 
 # Third Party Services
 
