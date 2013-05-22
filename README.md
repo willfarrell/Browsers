@@ -84,9 +84,9 @@ It's built into Mac OS X.
 
 # Virtual Machines
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
-- [VMware Fusion](https://www.vmware.com/)
+- [VMware Fusion](http://www.vmware.com/products/fusion/overview.html)
 - [Vagrant](http://www.vagrantup.com/)
-- [Docker](http://docker.io) - The Linux container engine
+- [Docker](http://docker.io) - The Linux Container Engine
 
 # Third Party Services
 
@@ -110,12 +110,6 @@ An extendable open source continuous integration server
 
 ## [Mac mini CI](https://github.com/angular/ci.angularjs.org)
 Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
-
----
-
-- [Fluid](http://fluidapp.com/) ($4.99)
-- [VirtualBox](https://www.virtualbox.org/wiki/Downloads) ($0)
-- [VMware Fusion](http://www.vmware.com/products/fusion/overview.html) ($50 - $100)
 
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
  
