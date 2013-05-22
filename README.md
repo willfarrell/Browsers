@@ -85,6 +85,7 @@ It's built into Mac OS X.
 # Virtual Machines
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 - [VMware Fusion](https://www.vmware.com/)
+- [Vagrant](http://www.vagrantup.com/)
 - [Docker](http://docker.io) - The Linux container engine
 
 # Third Party Services
