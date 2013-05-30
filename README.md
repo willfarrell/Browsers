@@ -32,6 +32,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
 - [Chrome Logger](https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd) - For server side logging and debugging in chrome console.
 - [Chrome Sniffer](https://chrome.google.com/webstore/detail/chrome-sniffer/homgcnaoacgigpkkljjjekpignblkeae) - Detect web applications and javascript libraries run on browsing website.
+- [Clear Cache](https://chrome.google.com/webstore/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn)
 - [Edit This Cookie](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg) - Edit This Cookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
 - [FirePHP4Chrome](https://chrome.google.com/webstore/detail/firephp4chrome/gpgbmonepdpnacijbbdijfbecmgoojma) - Show FirePHP log messages in the Chrome Developer Console
 - [github+travis](https://chrome.google.com/webstore/detail/github%20travis/klbmicjanlggbmanmpneloekhajhhbfb) - Display build status next to the project name on github.
