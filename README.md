@@ -45,6 +45,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [PageSpeed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
 - [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
 - [Pretty Beautify Javascript](https://chrome.google.com/webstore/detail/pretty-beautiful-javascri/piekbefgpgdecckjcpffhnacjflfoddg) - Automatically makes Javascript files pretty and beautiful!
+- [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
 - [Responsive Inspector](https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim) - Responsive Inspector allows inspecting page media queries.
 - [Ripple Emulator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - A browser based html5 mobile application development and testing tool
 - [Speed Tracer](https://chrome.google.com/webstore/detail/speed-tracer-by-google/ognampngfcbddbfemdapefohjiobgbdl) - Get insight into the performance of your web applications.
@@ -53,6 +54,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 ### [Security Extensions](https://chrome.google.com/webstore/search-extensions/security)
 - [1Password](https://agilebits.com/extensions/mac/index.html) - 1Password for Mac extension
 - [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
+- [Disconnect](https://disconnect.me/)
 - [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij) - Protect your privacy. See who's tracking your web browsing with Ghostery.
 - [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - Encrypt the Web! Automatically use HTTPS security on many sites.
 - [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) - Secure email with OpenPGP encryption for Webmail
