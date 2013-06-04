@@ -62,6 +62,8 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Personal Blocklist](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
 
 ## [FireFox](http://firefox.com) (Mac)
+- [FireFox](http://firefox.com)
+- [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
 
 ### [Add-Ons](https://addons.mozilla.org/en-US/firefox/)
 - LiveReload
@@ -75,7 +77,10 @@ If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en
 3. Install Command Line Tools and iOS Simulator.
 
 ## [Opera](http://www.opera.com/) (Mac)
-Additional Dev tools like [Opera Mobile](http://www.opera.com/developer/mobile-emulator) can be found at [dev.opera.com](http://dev.opera.com/).
+- [Opera](http://www.opera.com/)
+- [Opera Next](http://www.opera.com/developer/next)
+- [Opera Mobile](http://www.opera.com/developer/mobile-emulator)
+More tools can be found at [dev.opera.com](http://dev.opera.com/)
 
 ## [PhantomJS](http://phantomjs.org/) (Terminal)
 Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/).
