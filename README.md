@@ -27,13 +27,14 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### [Dev Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
-- [Adobe Edge Inspect](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
+- [Adobe Edge Inspect CC](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
 - [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) - Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.
 - [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
 - [Chrome Logger](https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd) - For server side logging and debugging in chrome console.
 - [Chrome Sniffer](https://chrome.google.com/webstore/detail/chrome-sniffer/homgcnaoacgigpkkljjjekpignblkeae) - Detect web applications and javascript libraries run on browsing website.
 - [Clear Cache](https://chrome.google.com/webstore/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn)
 - [Edit This Cookie](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg) - Edit This Cookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
+- [Extensions Reloader](https://chrome.google.com/webstore/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid) - Reload all unpacked extensions using the extension's toolbar button or by browsing to "http://reload.extensions"
 - [FirePHP4Chrome](https://chrome.google.com/webstore/detail/firephp4chrome/gpgbmonepdpnacijbbdijfbecmgoojma) - Show FirePHP log messages in the Chrome Developer Console
 - [github+travis](https://chrome.google.com/webstore/detail/github%20travis/klbmicjanlggbmanmpneloekhajhhbfb) - Display build status next to the project name on github.
 - [Google Analytics Opt-out](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
@@ -43,7 +44,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - Provides Chrome browser integration for the official LiveReload apps (Mac & Windows) and third-parties like guard-livereload and…
 - [My Travis](https://chrome.google.com/webstore/detail/my-travis/ddlafmkcenhiahiikbgjemcbdengmjbg) - Monitor your projects builds from Travis CI within Chrome.
 - [Page Benchmarker](https://chrome.google.com/webstore/detail/page-benchmarker/channimfdomahekjcahlbpccbgaopjll/details?hl=en) - Chromium Page Benchmarker.
-- [PageSpeed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
+- [PageSpeed Insights (by Google)](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
 - [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
 - [Pretty Beautify Javascript](https://chrome.google.com/webstore/detail/pretty-beautiful-javascri/piekbefgpgdecckjcpffhnacjflfoddg) - Automatically makes Javascript files pretty and beautiful!
 - [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
@@ -57,9 +58,11 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
 - [Disconnect](https://disconnect.me/)
 - [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij) - Protect your privacy. See who's tracking your web browsing with Ghostery.
+- [Google Analytics Opt-out](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
 - [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - Encrypt the Web! Automatically use HTTPS security on many sites.
 - [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) - Secure email with OpenPGP encryption for Webmail
-- [Personal Blocklist](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
+- [Personal Blocklist (by Google)](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
+- [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg) - Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.
 
 ## [FireFox](http://firefox.com) (Mac)
 - [FireFox](http://firefox.com)
