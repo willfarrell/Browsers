@@ -53,18 +53,6 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Speed Tracer](https://chrome.google.com/webstore/detail/speed-tracer-by-google/ognampngfcbddbfemdapefohjiobgbdl) - Get insight into the performance of your web applications.
 - [YSlow](https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh) - Make your pages faster with Yahoo!'s page performance tool
 
-### [Security Extensions](https://chrome.google.com/webstore/search-extensions/security)
-- [1Password](https://agilebits.com/extensions/mac/index.html) - 1Password for Mac extension
-- [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
-- [Disconnect](https://disconnect.me/)
-- [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij) - Protect your privacy. See who's tracking your web browsing with Ghostery.
-- [Google Analytics Opt-out](https://tools.google.com/dlpage/gaoptout) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
-- [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - Encrypt the Web! Automatically use HTTPS security on many sites.
-- [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) - Secure email with OpenPGP encryption for Webmail
-- [Personal Blocklist (by Google)](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
-- [Proxy Switchy!](https://chrome.google.com/webstore/detail/proxy-switchy/caehdcpeofiiigpdhbabniblemipncjj?hl=en) - Manage and switch between multiple proxies quickly and easily.
-- [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg) - Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.
-
 ## [FireFox](http://firefox.com) (Mac)
 - [FireFox](http://firefox.com)
 - [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
@@ -73,15 +61,8 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
 - [LiveReload]()
 
-### [Security Add-Ons]()
-- [1Password](https://agilebits.com/extensions/mac/index.html)
-- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
-
 ## [Internet Explorer](http://www.modern.ie) (VM)
 If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) or if you prefer the free path check out [ievms](https://github.com/xdissent/ievms). Run `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash` to get IE6 - IE10 using VirtualBox.
-
-### [Security Add-Ons]()
-- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
 ## [iOS](http://developer.apple.com/library/ios/#documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) (VM)
 1. Install [Xcode](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).
@@ -94,9 +75,6 @@ If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en
 - [Opera Mobile](http://www.opera.com/developer/mobile-emulator)
 More tools can be found at [dev.opera.com](http://dev.opera.com/)
 
-### [Security Add-Ons]()
-- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
-
 ## [PhantomJS](http://phantomjs.org/) (Terminal)
 Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/).
 
@@ -106,9 +84,8 @@ It's built into Mac OS X.
 ### [Dev Extensions](http://extensions.apple.com/)
 - LiveReload
 
-### [Security Extensions]()
-- [1Password](https://agilebits.com/extensions/mac/index.html)
-- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
+## [TorBrowser](https://www.torproject.org/download/download) (Mac)
+For testing site using Tor.
 
 # Virtual Machines
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
@@ -140,4 +117,15 @@ An extendable open source continuous integration server
 Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
 
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
- 
+
+# Privacy & Security Browser Extensions
+Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pera, Apple **S**afari
+
+- **CF???** [Adblock Plus](http://adblockplus.org/en/firefox) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
+- **CF--S** [1Password](https://agilebits.com/extensions/mac/index.html) - 1Password for Mac extension.
+- **CF?OS** [Disconnect](https://disconnect.me/) - Protect your privacy.
+- **CFIOS** [Ghostery](http://www.ghostery.com/) - Protect your privacy. See who's tracking your web browsing with Ghostery.
+- **CFIOS** [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
+- **CF---** [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Encrypt the Web! Automatically use HTTPS security on many sites.
+- **CF---** [Mailvelope](http://www.mailvelope.com/) - Secure email with OpenPGP encryption for Webmail
+- **CFIOS** [Terms of Service; Didn’t Read](http://tosdr.org/) - Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.
