@@ -58,21 +58,30 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
 - [Disconnect](https://disconnect.me/)
 - [Ghostery](https://chrome.google.com/webstore/detail/ghostery/mlomiejdfkolichcflejclcbmpeaniij) - Protect your privacy. See who's tracking your web browsing with Ghostery.
-- [Google Analytics Opt-out](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
+- [Google Analytics Opt-out](https://tools.google.com/dlpage/gaoptout) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
 - [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - Encrypt the Web! Automatically use HTTPS security on many sites.
 - [Mailvelope](https://chrome.google.com/webstore/detail/mailvelope/kajibbejlbohfaggdiogboambcijhkke) - Secure email with OpenPGP encryption for Webmail
 - [Personal Blocklist (by Google)](https://chrome.google.com/webstore/detail/personal-blocklist-by-goo/nolijncfnkgaikbjbdaogikpmpbdcdef) - Blocks domains/hosts from appearing in your Google search results.
+- [Proxy Switchy!](https://chrome.google.com/webstore/detail/proxy-switchy/caehdcpeofiiigpdhbabniblemipncjj?hl=en) - Manage and switch between multiple proxies quickly and easily.
 - [Terms of Service; Didn’t Read](https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg) - Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.
 
 ## [FireFox](http://firefox.com) (Mac)
 - [FireFox](http://firefox.com)
 - [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
 
-### [Add-Ons](https://addons.mozilla.org/en-US/firefox/)
-- LiveReload
+### [Dev Add-Ons](https://addons.mozilla.org/en-US/firefox/)
+- [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
+- [LiveReload]()
+
+### [Security Add-Ons]()
+- [1Password](https://agilebits.com/extensions/mac/index.html)
+- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) or if you prefer the free path check out [ievms](https://github.com/xdissent/ievms). Run `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash` to get IE6 - IE10 using VirtualBox.
+
+### [Security Add-Ons]()
+- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
 ## [iOS](http://developer.apple.com/library/ios/#documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) (VM)
 1. Install [Xcode](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).
@@ -85,13 +94,21 @@ If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en
 - [Opera Mobile](http://www.opera.com/developer/mobile-emulator)
 More tools can be found at [dev.opera.com](http://dev.opera.com/)
 
+### [Security Add-Ons]()
+- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
+
 ## [PhantomJS](http://phantomjs.org/) (Terminal)
 Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/).
 
 ## [Safari](http://www.apple.com/safari/) (Mac)
 It's built into Mac OS X.
-### [Extensions](http://extensions.apple.com/)
+
+### [Dev Extensions](http://extensions.apple.com/)
 - LiveReload
+
+### [Security Extensions]()
+- [1Password](https://agilebits.com/extensions/mac/index.html)
+- [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout)
 
 # Virtual Machines
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
