@@ -11,7 +11,7 @@ A collection of aliases for browsers, services and virtual machine images can be
 Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2). Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### Create and Run an Android Virtual Device (AVD)
-1. Go to `Tools > Managa AVDs`
+1. Go to `Tools > Manage AVDs`
 2. Click `New...`
 3. Enter `AVD Name`, `Device`, `Target` and any other additional setting you need. Click `OK`.
 4. Select AVD from list and click `Start...`
