@@ -94,36 +94,24 @@ For testing site using Tor.
 - [Docker](http://docker.io) - The Linux Container Engine
 
 # Third Party Services
-
-## [BrowserStack](http://www.browserstack.com/start)
-A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
-
-## [Sause Labs](https://saucelabs.com/)
-Can be downloaded from the [Mac Store](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
+- [BrowserStack](http://www.browserstack.com/start) - A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
+- [Sause Labs](https://saucelabs.com/) - Can be downloaded from the [Mac Store](https://itunes.apple.com/ca/app/sauce/id564308477?mt=12). 
 
 
 # Continuous Integration (CI)
-
-## [karma](http://karma-runner.github.io/0.8/index.html)
-The main goal for Karma is to bring a productive testing environment to developers. An environment, where they don't have to set up many things and rather just write the code and get an instant feedback. Because getting a quick feedback is what makes you productive and creative. Requires [nodejs](http://nodejs.org/download/), and works great with [grunt](http://gruntjs.com/getting-started).
-
-## [Travis CI](https://travis-ci.org/)
-A hosted continuous integration service for the open source community.
-
-## [Jenkins](http://jenkins-ci.org/)
-An extendable open source continuous integration server
-
-## [Mac mini CI](https://github.com/angular/ci.angularjs.org)
-Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
+- [karma](http://karma-runner.github.io/0.8/index.html) - The main goal for Karma is to bring a productive testing environment to developers. An environment, where they don't have to set up many things and rather just write the code and get an instant feedback. Because getting a quick feedback is what makes you productive and creative. Requires [nodejs](http://nodejs.org/download/), and works great with [grunt](http://gruntjs.com/getting-started).
+- [Travis CI](https://travis-ci.org/) - A hosted continuous integration service for the open source community.
+- [Jenkins](http://jenkins-ci.org/) - An extendable open source continuous integration server.
+- [Mac mini CI](https://github.com/angular/ci.angularjs.org) - Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
 
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
 
 # Privacy & Security Browser Extensions
 Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pera, Apple **S**afari
 
-- **CF???** [Adblock Plus](http://adblockplus.org/en/firefox) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
+- **CF-O-** [Adblock Plus](http://adblockplus.org/en/) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
 - **CF--S** [1Password](https://agilebits.com/extensions/mac/index.html) - 1Password for Mac extension.
-- **CF?OS** [Disconnect](https://disconnect.me/) - Protect your privacy.
+- **CF-OS** [Disconnect](https://disconnect.me/) - Protect your privacy.
 - **CFIOS** [Ghostery](http://www.ghostery.com/) - Protect your privacy. See who's tracking your web browsing with Ghostery.
 - **CFIOS** [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
 - **CF---** [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Encrypt the Web! Automatically use HTTPS security on many sites.
