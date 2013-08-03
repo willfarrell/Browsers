@@ -1,4 +1,4 @@
-#!/bin/sh 
+#!/bin/sh
 osascript <<END 
 tell application "Terminal"
 	do script "clear;phantomjs"

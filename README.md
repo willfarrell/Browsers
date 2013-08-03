@@ -59,7 +59,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ### [Dev Add-Ons](https://addons.mozilla.org/en-US/firefox/)
 - [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
-- [LiveReload]()
+- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) or if you prefer the free path check out [ievms](https://github.com/xdissent/ievms). Run `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash` to get IE6 - IE10 using VirtualBox.
@@ -82,7 +82,7 @@ Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.githu
 It's built into Mac OS X.
 
 ### [Dev Extensions](http://extensions.apple.com/)
-- LiveReload
+- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 ## [TorBrowser](https://www.torproject.org/download/download) (Mac)
 For testing site using Tor.
@@ -91,7 +91,7 @@ For testing site using Tor.
 - [Oracle VM VirtualBox](https://www.virtualbox.org/)
 - [VMware Fusion](http://www.vmware.com/products/fusion/overview.html)
 - [Vagrant](http://www.vagrantup.com/)
-- [Docker](http://docker.io) - The Linux Container Engine
+- [Docker](http://docker.io) - The Linux Container Engine.
 
 # Third Party Services
 - [BrowserStack](http://www.browserstack.com/start) - A Fluid app of browserstack.com dashboard. [Download](BrowserStack.app)
