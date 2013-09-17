@@ -62,7 +62,10 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
-If you have VMware Fusion or Parallels visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) or if you prefer the free path check out [ievms](https://github.com/xdissent/ievms). Run `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash` to get IE6 - IE10 using VirtualBox.
+To run IE a virtual machine is required. IE6 - IE11 are available.
+1. Virtual Box: [xdissent/ievms](https://github.com/xdissent/ievms) `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash`
+1. VMWare Fusion: [willfarrell/ievms](https://github.com/willfarrell/ievms) `curl -s https://raw.github.com/willfarrell/ievms/master/ievms.sh | bash`
+1. Parallels: Visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) to download VMs.
 
 ## [iOS](http://developer.apple.com/library/ios/#documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) (VM)
 1. Install [Xcode](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).
