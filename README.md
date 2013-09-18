@@ -26,40 +26,11 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
-### [Dev Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
-- [Adobe Edge Inspect CC](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
-- [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) - Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.
-- [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
-- [Chrome Logger](https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd) - For server side logging and debugging in chrome console.
-- [Chrome Sniffer](https://chrome.google.com/webstore/detail/chrome-sniffer/homgcnaoacgigpkkljjjekpignblkeae) - Detect web applications and javascript libraries run on browsing website.
-- [Clear Cache](https://chrome.google.com/webstore/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn)
-- [Edit This Cookie](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg) - Edit This Cookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
-- [Extensions Reloader](https://chrome.google.com/webstore/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid) - Reload all unpacked extensions using the extension's toolbar button or by browsing to "http://reload.extensions"
-- [FirePHP4Chrome](https://chrome.google.com/webstore/detail/firephp4chrome/gpgbmonepdpnacijbbdijfbecmgoojma) - Show FirePHP log messages in the Chrome Developer Console
-- [github+travis](https://chrome.google.com/webstore/detail/github%20travis/klbmicjanlggbmanmpneloekhajhhbfb) - Display build status next to the project name on github.
-- [Google Analytics Opt-out](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
-- [Grunt Devtools](https://chrome.google.com/webstore/detail/grunt-devtools/fbiodiodggnlakggeeckkjccjhhjndnb?hl=en) - Extends the Developer Tools, adding tools for Grunt
-- [Jenkins Notifier for Chrome](https://chrome.google.com/webstore/detail/jenkins-notifier-for-chro/mnjbjjllbclkpnebaddhkoonjelmiekm) - Jenkins Notifier for Chrome™ is an (unofficial) extension for Jenkins ( http://jenkins-ci.org ). This extension notifies you of…
-- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) - Validate and view JSON documents
-- [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - Provides Chrome browser integration for the official LiveReload apps (Mac & Windows) and third-parties like guard-livereload and…
-- [My Travis](https://chrome.google.com/webstore/detail/my-travis/ddlafmkcenhiahiikbgjemcbdengmjbg) - Monitor your projects builds from Travis CI within Chrome.
-- [Page Benchmarker](https://chrome.google.com/webstore/detail/page-benchmarker/channimfdomahekjcahlbpccbgaopjll/details?hl=en) - Chromium Page Benchmarker.
-- [PageSpeed Insights (by Google)](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
-- [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
-- [Pretty Beautify Javascript](https://chrome.google.com/webstore/detail/pretty-beautiful-javascri/piekbefgpgdecckjcpffhnacjflfoddg) - Automatically makes Javascript files pretty and beautiful!
-- [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
-- [Responsive Inspector](https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim) - Responsive Inspector allows inspecting page media queries.
-- [Ripple Emulator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - A browser based html5 mobile application development and testing tool
-- [Speed Tracer](https://chrome.google.com/webstore/detail/speed-tracer-by-google/ognampngfcbddbfemdapefohjiobgbdl) - Get insight into the performance of your web applications.
-- [YSlow](https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh) - Make your pages faster with Yahoo!'s page performance tool
-
 ## [FireFox](http://firefox.com) (Mac)
 - [FireFox](http://firefox.com)
 - [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
 
-### [Dev Add-Ons](https://addons.mozilla.org/en-US/firefox/)
-- [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
-- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 To run IE a virtual machine is required. IE6 - IE11 are available.
@@ -109,7 +80,8 @@ For testing site using Tor.
 
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
 
-# Privacy & Security Browser Extensions
+# Browser Extensions
+## Privacy & Security
 Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pera, Apple **S**afari
 
 - **CF-O-** [Adblock Plus](http://adblockplus.org/en/) - The free adblock tool for Chrome: Blocks annoying video ads on YouTube, Facebook ads, banners and much more.
@@ -120,3 +92,34 @@ Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pe
 - **CF---** [HTTPS Everywhere](https://www.eff.org/https-everywhere) - Encrypt the Web! Automatically use HTTPS security on many sites.
 - **CF---** [Mailvelope](http://www.mailvelope.com/) - Secure email with OpenPGP encryption for Webmail
 - **CFIOS** [Terms of Service; Didn’t Read](http://tosdr.org/) - Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.
+
+### [Chrome Dev Extensions](https://chrome.google.com/webstore/category/ext/11-web-development)
+- [Adobe Edge Inspect CC](https://chrome.google.com/webstore/detail/adobe-edge-inspect/ijoeapleklopieoejahbpdnhkjjgddem) - Wirelessly connect multiple iOS & Android devices to your computer. Synchronously browse, inspect & debug on devices.
+- [AngularJS Batarang](https://chrome.google.com/webstore/detail/angularjs-batarang/ighdmehidhipcmcojjgiloacoafjmpfk) - Extends the Developer Tools, adding tools for debugging and profiling AngularJS applications.
+- [blitz](https://chrome.google.com/webstore/detail/blitz/dfdmpnkoalkolclnaipnopkooilhnped) - Instantly load test your app from around the world with just a few clicks. No scripting and no test creation.
+- [Chrome Logger](https://chrome.google.com/webstore/detail/chrome-logger/noaneddfkdjfnfdakjjmocngnfkfehhd) - For server side logging and debugging in chrome console.
+- [Chrome Sniffer](https://chrome.google.com/webstore/detail/chrome-sniffer/homgcnaoacgigpkkljjjekpignblkeae) - Detect web applications and javascript libraries run on browsing website.
+- [Clear Cache](https://chrome.google.com/webstore/detail/clear-cache/cppjkneekbjaeellbfkmgnhonkkjfpdn)
+- [Edit This Cookie](https://chrome.google.com/webstore/detail/edit-this-cookie/fngmhnnpilhplaeedifhccceomclgfbg) - Edit This Cookie is a cookie manager. You can add, delete, edit, search, protect and block cookies!
+- [Extensions Reloader](https://chrome.google.com/webstore/detail/extensions-reloader/fimgfedafeadlieiabdeeaodndnlbhid) - Reload all unpacked extensions using the extension's toolbar button or by browsing to "http://reload.extensions"
+- [FirePHP4Chrome](https://chrome.google.com/webstore/detail/firephp4chrome/gpgbmonepdpnacijbbdijfbecmgoojma) - Show FirePHP log messages in the Chrome Developer Console
+- [github+travis](https://chrome.google.com/webstore/detail/github%20travis/klbmicjanlggbmanmpneloekhajhhbfb) - Display build status next to the project name on github.
+- [Google Analytics Opt-out](https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh) - Tells the Google Analytics JavaScript not to send information to Google Analytics.
+- [Grunt Devtools](https://chrome.google.com/webstore/detail/grunt-devtools/fbiodiodggnlakggeeckkjccjhhjndnb?hl=en) - Extends the Developer Tools, adding tools for Grunt
+- [Jenkins Notifier for Chrome](https://chrome.google.com/webstore/detail/jenkins-notifier-for-chro/mnjbjjllbclkpnebaddhkoonjelmiekm) - Jenkins Notifier for Chrome™ is an (unofficial) extension for Jenkins ( http://jenkins-ci.org ). This extension notifies you of…
+- [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) - Validate and view JSON documents
+- [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - Provides Chrome browser integration for the official LiveReload apps (Mac & Windows) and third-parties like guard-livereload and…
+- [My Travis](https://chrome.google.com/webstore/detail/my-travis/ddlafmkcenhiahiikbgjemcbdengmjbg) - Monitor your projects builds from Travis CI within Chrome.
+- [Page Benchmarker](https://chrome.google.com/webstore/detail/page-benchmarker/channimfdomahekjcahlbpccbgaopjll/details?hl=en) - Chromium Page Benchmarker.
+- [PageSpeed Insights (by Google)](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
+- [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
+- [Pretty Beautify Javascript](https://chrome.google.com/webstore/detail/pretty-beautiful-javascri/piekbefgpgdecckjcpffhnacjflfoddg) - Automatically makes Javascript files pretty and beautiful!
+- [Postman - REST Client](https://chrome.google.com/webstore/detail/postman-rest-client/fdmmgilgnpjigdojojpjoooidkmcomcm?hl=en)
+- [Responsive Inspector](https://chrome.google.com/webstore/detail/responsive-inspector-beta/memcdolmmnmnleeiodllgpibdjlkbpim) - Responsive Inspector allows inspecting page media queries.
+- [Ripple Emulator](https://chrome.google.com/webstore/detail/ripple-emulator-beta/geelfhphabnejjhdalkjhgipohgpdnoc) - A browser based html5 mobile application development and testing tool
+- [Speed Tracer](https://chrome.google.com/webstore/detail/speed-tracer-by-google/ognampngfcbddbfemdapefohjiobgbdl) - Get insight into the performance of your web applications.
+- [YSlow](https://chrome.google.com/webstore/detail/yslow/ninejjcohidippngpapiilnmkgllmakh) - Make your pages faster with Yahoo!'s page performance tool
+
+### [Firefox Dev Add-Ons](https://addons.mozilla.org/en-US/firefox/)
+- [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
+- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
