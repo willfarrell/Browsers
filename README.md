@@ -34,14 +34,15 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 To run IE a virtual machine is required. IE6 - IE11 are available.
+
 1. Virtual Box: [xdissent/ievms](https://github.com/xdissent/ievms) `curl -s https://raw.github.com/xdissent/ievms/master/ievms.sh | bash`
 1. VMWare Fusion: [willfarrell/ievms](https://github.com/willfarrell/ievms) `curl -s https://raw.github.com/willfarrell/ievms/master/ievms.sh | bash`
 1. Parallels: Visit [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads) to download VMs.
 
 ## [iOS](http://developer.apple.com/library/ios/#documentation/IDEs/Conceptual/iOS_Simulator_Guide/Introduction/Introduction.html) (VM)
 1. Install [Xcode](https://itunes.apple.com/ca/app/xcode/id497799835?mt=12).
-2. Go to `Xcode > Preferences… > Downloads`.
-3. Install Command Line Tools and iOS Simulator.
+1. Go to `Xcode > Preferences… > Downloads`.
+1. Install Command Line Tools and iOS Simulator.
 
 ## [Opera](http://www.opera.com/) (Mac)
 - [Opera](http://www.opera.com/)
@@ -54,9 +55,6 @@ Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.githu
 
 ## [Safari](http://www.apple.com/safari/) (Mac)
 It's built into Mac OS X.
-
-### [Dev Extensions](http://extensions.apple.com/)
-- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
 
 ## [TorBrowser](https://www.torproject.org/download/download) (Mac)
 For testing site using Tor.
@@ -122,4 +120,7 @@ Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pe
 
 ### [Firefox Dev Add-Ons](https://addons.mozilla.org/en-US/firefox/)
 - [Firefox OS Simulator](https://people.mozilla.com/~myk/r2d2b2g/)
+- [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+
+### [Safari Dev Extensions](http://extensions.apple.com/)
 - [LiveReload](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
