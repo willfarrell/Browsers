@@ -30,8 +30,6 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [FireFox](http://firefox.com)
 - [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
 
-
-
 ## [Internet Explorer](http://www.modern.ie) (VM)
 To run IE a virtual machine is required. IE6 - IE11 are available.
 
@@ -77,6 +75,28 @@ For testing site using Tor.
 - [Mac mini CI](https://github.com/angular/ci.angularjs.org) - Shell scripts and configuration files used by the Google AngularJS Team. [Video](https://www.youtube.com/watch?v=BNpV7npURhE) [Slides](https://docs.google.com/presentation/d/1-j264F0Q8k3NzionQspx7fhKd2E8XPkIKItxz2qhN28)
 
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
+
+# Boxen Packages
+
+- [Android](https://github.com/boxen/puppet-android)
+- BlackBerry - None yet.
+- [Chrome](https://github.com/boxen/puppet-chrome)
+- [Firefox](https://github.com/boxen/puppet-firefox)
+- Internet Explorer - None yet.
+- iOS - Included in Mac Xcode
+- [Opera](https://github.com/boxen/puppet-opera)
+- [PhantomJS](https://github.com/boxen/puppet-phantomjs)
+- Safari - Already include on Mac
+- TorBrowser - Not build yet.
+
+- [Virtual Box](https://github.com/boxen/puppet-virtualbox)
+- [Vagrant](https://github.com/boxen/puppet-vagrant)
+- VMWare Fusion - Not built yet.
+
+- BrowserStack - Not built yet.
+- Sause Labs - Not built yet.
+
+- [Jenkins](https://github.com/boxen/puppet-jenkins)
 
 # Browser Extensions
 ## Privacy & Security
