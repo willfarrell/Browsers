@@ -77,24 +77,25 @@ For testing site using Tor.
 [dockfolder]: ./dock-folder.png "Browser Alias Folder"
 
 # Boxen Packages
+- [All Browsers](https://github.com/boxen/puppet-browsers)
 
 - [Android](https://github.com/boxen/puppet-android)
-- BlackBerry - None yet.
+- BlackBerry :: None yet.
 - [Chrome](https://github.com/boxen/puppet-chrome)
 - [Firefox](https://github.com/boxen/puppet-firefox)
-- Internet Explorer - None yet.
-- iOS - Included in Mac Xcode
+- Internet Explorer :: None yet.
+- iOS :: Included in Mac Xcode
 - [Opera](https://github.com/boxen/puppet-opera)
 - [PhantomJS](https://github.com/boxen/puppet-phantomjs)
-- Safari - Already include on Mac
+- Safari :: Already include on Mac
 - TorBrowser - Not build yet.
 
 - [Virtual Box](https://github.com/boxen/puppet-virtualbox)
 - [Vagrant](https://github.com/boxen/puppet-vagrant)
-- VMWare Fusion - Not built yet.
+- VMWare Fusion :: Not built yet.
 
-- BrowserStack - Not built yet.
-- Sause Labs - Not built yet.
+- BrowserStack :: Not built yet.
+- Sause Labs :: Not built yet.
 
 - [Jenkins](https://github.com/boxen/puppet-jenkins)
 
