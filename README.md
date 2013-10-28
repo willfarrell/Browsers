@@ -42,6 +42,8 @@ To run IE a virtual machine is required. IE6 - IE11 are available.
 1. Go to `Xcode > Preferences… > Downloads`.
 1. Install Command Line Tools and iOS Simulator.
 
+*/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator.app*
+
 ## [Opera](http://www.opera.com/) (Mac)
 - [Opera](http://www.opera.com/)
 - [Opera Next](http://www.opera.com/developer/next)
