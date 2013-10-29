@@ -159,4 +159,6 @@ app "TorBrowser"				"TorBrowser"			"vidalia"
 app "WebKit"					"WebKit"				"webkit"
 
 # Make Vagrant Pretty
+sudo chmod 777 "/Applications/Vagrant"
 replace_icon "/Applications/Vagrant" "$DIR/BrowserIcons/Vagrant.icns"
+sudo chmod 755 "/Applications/Vagrant"
