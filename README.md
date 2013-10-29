@@ -3,7 +3,7 @@ A collection of aliases for browsers, services and virtual machine images can be
 
 ![alt text][dockfolder]
 
-Run `./alias` to build `/Applications/Browsers/` forlder of shortcuts to place on Dock. Searches `~/Virtual Machines/` for VMs.
+Run `./alias` to build `/Applications/Browsers/` forlder of shortcuts to place on your Dock. Searches `~/Virtual Machines/` for IE VMs.
 
 ---
 
@@ -28,10 +28,14 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
-## [FireFox](http://firefox.com) (Mac)
-- [FireFox](http://firefox.com)
-- [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
-- [FirefoxOS](https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator)
+## [Firefox](http://firefox.com) (Mac)
+- [Firefox](http://firefox.com)
+- [Firefox Aurora](https://www.mozilla.org/en-US/firefox/aurora/)
+- [Firefox Nightly](http://nightly.mozilla.org/)
+- [Firefox OS](https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator)
+- [Firefox Boot2Gecko w/ Gaia](https://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/)
+ - [source](https://github.com/mozilla-b2g/gaia)
+ - [Add-On Firefox OS Simulator](https://addons.mozilla.org/en-US/firefox/addon/firefox-os-simulator/)
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 To run IE a virtual machine is required. IE6 - IE11 are available.

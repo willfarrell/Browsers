@@ -92,13 +92,17 @@ vmware() {
 
 # Folders
 folder="/Applications/Browsers"
-mkdir -p "$folder/Chrome"
-mkdir -p "$folder/IE"
-mkdir -p "$folder/Opera"
 
 replace_icon $folder "$DIR/BrowserFolderIcon/BrowserFolderIcon.icns"
+mkdir -p "$folder/BlackBerry"
+replace_icon "$folder/BlackBerry" "$DIR/BrowserIcons/BlackBerry.icns"
+mkdir -p "$folder/Chrome"
 replace_icon "$folder/Chrome" "$DIR/BrowserIcons/Chrome.icns"
+mkdir -p "$folder/IE"
 replace_icon "$folder/IE" "$DIR/BrowserIcons/IE.icns"
+mkdir -p "$folder/Firefox"
+replace_icon "$folder/Firefox" "$DIR/BrowserIcons/Firefox.icns"
+mkdir -p "$folder/Opera"
 replace_icon "$folder/Opera" "$DIR/BrowserIcons/Opera.icns"
 
 # Get VM folder
@@ -108,15 +112,17 @@ vmdir="/Users/$USER/Virtual Machines"
 echo "---> Generating App Aliases"
 app "Android"				"Android"	"Android"
 
-vmware "$vmdir/BlackBerry10Simulator-BB10_1_X"			"BlackBerry 10"			"BB"
-vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry PlayBook"	"BB"
+vmware "$vmdir/BlackBerry10Simulator-BB10_1_X"			"BlackBerry/BlackBerry 10"			"BlackBerry"
+vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry/BlackBerry PlayBook"	"BlackBerry"
 
 app "BrowserStack"				"BrowserStack"			"BrowserStack"
 app "Chromium"					"Chrome/Chromium"		"app"
 app "Google Chrome Canary"		"Chrome/Chrome Canary"	"app"
 app "Google Chrome"				"Chrome/Chrome"			"app"
-app "Firefox"					"Firefox"				"firefox"
-app "FirefoxAurora"				"Firefox Aurora"		"firefox"
+app "Firefox"					"Firefox/Firefox"				"firefox"
+app "FirefoxAurora"				"Firefox/Firefox Aurora"		"firefox"
+app "FirefoxNightly"			"Firefox/Firefox Nightly"		"firefox"
+app "B2G"						"Firefox/Boot2Gecko"		"b2g"
 
 vbox "$vmdir/IE6 - WinXP.ova"			"IE/IE6 - WinXP"	"IE6"
 vbox "$vmdir/IE7 - WinXP.ova"			"IE/IE7 - WinXP"	"IE7"
