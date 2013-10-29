@@ -1,15 +1,23 @@
 buildscript {
     repositories {
+<#if mavenUrl == "mavenCentral">
+        mavenCentral()
+<#else>
         maven { url '${mavenUrl}' }
+</#if>
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.4'
+        classpath 'com.android.tools.build:gradle:${gradlePluginVersion}'
     }
 }
 apply plugin: 'android'
 
-dependencies {
-    compile files('libs/android-support-v4.jar')
+repositories {
+<#if mavenUrl == "mavenCentral">
+    mavenCentral()
+<#else>
+    maven { url '${mavenUrl}' }
+</#if>
 }
 
 android {
@@ -20,4 +28,8 @@ android {
         minSdkVersion ${minApi}
         targetSdkVersion ${targetApi}
     }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:${v4SupportLibraryVersion}'
 }

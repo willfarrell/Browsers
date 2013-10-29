@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <template
     format="3"
-    revision="2"
+    revision="3"
     name="Blank Activity"
     description="Creates a new blank activity, with an action bar and optional navigational elements such as tabs or horizontal swipe.">
-    <dependency name="android-support-v4" revision="8" />
 
     <category value="Activities" />
 

@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "If you're seeing this message you should change you default settings to avoid seeing this."
+echo "Preferences -> Shell -> Whenthe shell exits: -> Close if the shell exited cleanly"
+# -e 'tell application "Terminal" to quit' -e 'tell application "Terminal"'
+# -e 'quit app (path to frontmost application as text)'
+# -e 'if (count of (every window whose visible is true)) <= 1 then' -e 'quit' -e 'else' -e 'close window 1' -e 'end if'
+
+osascript -e 'tell application "VMWare Fusion" to open POSIX file "{{vmwarevm}}"' & exit

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template
     format="1"
-    revision="1"
+    revision="2"
     name="Android Library"
     description="Creates a new Android library.">
     <dependency name="android-support-v4" revision="8" />
@@ -16,7 +16,7 @@
         id="packageName"
         name="Package name"
         type="string"
-        constraints="package"
+        constraints="package|nonempty"
         default="com.mycompany.myapp" />
 
     <parameter

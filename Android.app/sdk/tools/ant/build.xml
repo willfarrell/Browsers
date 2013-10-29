@@ -76,6 +76,7 @@
     <!-- Renderscript options -->
     <property name="renderscript.debug.opt.level" value="O0" />
     <property name="renderscript.release.opt.level" value="O3" />
+    <property name="renderscript.support.mode" value="false" />
 
     <!-- manifest merger default value -->
     <property name="manifestmerger.enabled" value="false" />
@@ -144,6 +145,8 @@
     <property name="out.absolute.dir" location="${out.dir}" />
     <property name="out.classes.absolute.dir" location="${out.dir}/classes" />
     <property name="out.res.absolute.dir" location="${out.dir}/res" />
+    <property name="out.rs.obj.absolute.dir" location="${out.dir}/rsObj" />
+    <property name="out.rs.libs.absolute.dir" location="${out.dir}/rsLibs" />
     <property name="out.aidl.absolute.dir" location="${out.dir}/aidl" />
     <property name="out.dexed.absolute.dir" location="${out.dir}/dexedLibs" />
     <property name="out.manifest.abs.file" location="${out.dir}/AndroidManifest.xml" />
@@ -313,6 +316,8 @@
                 <jarfile refid="project.all.jars.path" />
                 <nativefolder path="${native.libs.absolute.dir}" />
                 <nativefolder refid="project.library.native.folder.path" />
+                <nativefolder refid="project.rs.support.libs.path" />
+                <nativefolder path="${out.rs.libs.absolute.dir}" />
                 <extra-jars/>
             </apkbuilder>
         </sequential>
@@ -476,17 +481,10 @@
     <!-- Pre build setup -->
     <target name="-build-setup" depends="-setup">
         <!-- find location of build tools -->
-        <getbuildtools name="android.build.tools.dir" />
+        <getbuildtools name="android.build.tools.dir" verbose="${verbose}" />
         <property name="aidl" location="${android.build.tools.dir}/aidl${exe}" />
         <property name="aapt" location="${android.build.tools.dir}/aapt${exe}" />
         <property name="dx" location="${android.build.tools.dir}/dx${bat}" />
-        <property name="renderscript" location="${android.build.tools.dir}/llvm-rs-cc${exe}"/>
-
-        <!-- Renderscript include Path -->
-        <path id="android.renderscript.include.path">
-            <pathelement location="${android.platform.tools.dir}/renderscript/include" />
-            <pathelement location="${android.platform.tools.dir}/renderscript/clang-include" />
-        </path>
 
         <!-- read the previous build mode -->
         <property file="${out.build.prop.file}" />
@@ -553,6 +551,8 @@
         <mkdir dir="${jar.libs.absolute.dir}" />
         <mkdir dir="${out.absolute.dir}" />
         <mkdir dir="${out.res.absolute.dir}" />
+        <mkdir dir="${out.rs.obj.absolute.dir}" />
+        <mkdir dir="${out.rs.libs.absolute.dir}" />
         <do-only-if-manifest-hasCode>
             <mkdir dir="${gen.absolute.dir}" />
             <mkdir dir="${out.classes.absolute.dir}" />
@@ -571,6 +571,9 @@
                 libraryNativeFolderPathOut="project.library.native.folder.path"
                 jarLibraryPathOut="project.all.jars.path"
                 targetApi="${project.target.apilevel}"
+                renderscriptSupportMode="${renderscript.support.mode}"
+                buildToolsFolder="${android.build.tools.dir}"
+                renderscriptSupportLibsOut="project.rs.support.libs.path"
                 verbose="${verbose}" />
 
         <!-- compile the libraries if any -->
@@ -662,12 +665,16 @@
             <echo level="info">Handling RenderScript files...</echo>
             <!-- set the rs target prop in case it hasn't been set. -->
             <property name="renderscript.target" value="${project.minSdkVersion}" />
-            <renderscript executable="${renderscript}"
-                    includePathRefId="android.renderscript.include.path"
+            <renderscript
+                    buildToolsRoot="${android.build.tools.dir}"
                     genFolder="${gen.absolute.dir}"
-                    resFolder="${out.res.absolute.dir}/raw"
+                    resFolder="${out.res.absolute.dir}"
+                    rsObjFolder="${out.rs.obj.absolute.dir}"
+                    libsFolder="${out.rs.libs.absolute.dir}"
                     targetApi="${renderscript.target}"
                     optLevel="${renderscript.opt.level}"
+                    supportMode="${renderscript.support.mode}"
+                    binFolder="${out.absolute.dir}"
                     buildType="${build.is.packaging.debug}"
                     previousBuildType="${build.last.is.packaging.debug}">
                 <source path="${source.absolute.dir}"/>

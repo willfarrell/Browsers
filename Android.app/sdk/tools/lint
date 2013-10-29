@@ -68,5 +68,6 @@ jarpath="$frameworkdir/$jarfile"
 exec "$javaCmd" \
     -Xmx512m $os_opts $java_debug \
     -Dcom.android.tools.lint.bindir="$progdir" \
+    -Djava.awt.headless=true \
     -classpath "$jarpath" \
     com.android.tools.lint.Main "$@"

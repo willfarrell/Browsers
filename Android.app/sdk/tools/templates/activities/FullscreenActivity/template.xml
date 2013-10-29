@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template
     format="3"
-    revision="2"
+    revision="3"
     name="Fullscreen Activity"
     description="Creates a new activity that toggles the visibility of the system UI (status and navigation bars) and action bar upon user interaction."
     minApi="4"

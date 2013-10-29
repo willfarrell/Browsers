@@ -10,7 +10,7 @@ Run `./alias` to build `/Applications/Browsers/` forlder of shortcuts to place o
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
 
 ## [Android](http://developer.android.com) (VM)
-Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.2.2). Made with [appify](https://gist.github.com/mathiasbynens/674099).
+Download from [developer.android.com](http://developer.android.com/sdk/index.html) or use the compiled app version [Android.app](Android.app) (Comes with Android 4.3). Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
 ### Create and Run an Android Virtual Device (AVD)
 1. Go to `Tools > Manage AVDs`
@@ -21,6 +21,7 @@ Download from [developer.android.com](http://developer.android.com/sdk/index.htm
 
 ## [BlackBerry](http://developer.blackberry.com) (VM)
 VMware Fusion is required, virtual machines can be found at [developer.blackberry.com](http://developer.blackberry.com/devzone/develop/simulator/simulator_installing.html).
+
 
 ## [Chrome](http://www.google.com/chrome) (Mac)
 - [Chrome](http://www.chromium.org/getting-involved/dev-channel) Stable, Dev, Canary
@@ -62,9 +63,21 @@ More tools can be found at [dev.opera.com](http://dev.opera.com/)
 Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/).
 
 ## [Safari](http://www.apple.com/safari/) (Mac)
-It's built into Mac OS X.
-
+- [Safari](http://www.apple.com/downloads/) - It's built into Mac OS X.
 - [Webkit](http://nightly.webkit.org/)
+
+# Other (less popular) Browsers
+## [Arora](https://code.google.com/p/arora/) (Mac)
+
+## [Camino](http://caminobrowser.org/download/) (Mac)
+A slimed down version of Firefox.
+
+## [OmniWeb](http://www.omnigroup.com/more) (Mac)
+OmniWeb is a powerful, award-winning, feature-rich alternative to the standard web browser. Better organization and more fun with the original side-tabbed browser. (Requires OS X v10.4.8+)
+
+## [SeaMonkey](http://www.seamonkey-project.org/) (Mac)
+
+## [Stainless](http://www.stainlessapp.com/) (Mac)
 
 ## [TorBrowser](https://www.torproject.org/download/download) (Mac)
 For testing site using Tor.

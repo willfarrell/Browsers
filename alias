@@ -7,15 +7,15 @@ replace_icon() {
 	iconDestination=$1
 	icon=/tmp/`basename ${iconSource/ /_}`
 	rsrc=/tmp/icon.rsrc
-	
+
 	# Create icon from the iconSource
 	cp $iconSource $icon
-	
+
 	# Add icon to image file, meaning use itself as the icon
-	sips -i $icon
-	
+	sips -i $icon >/dev/null
+
 	# Take that icon and put it into a rsrc file
-	DeRez -only icns $icon > $rsrc
+	DeRez -only icns $icon > $rsrc 
 
 	# Apply the rsrc file to
 	SetFile -a C "$iconDestination"
@@ -40,7 +40,7 @@ set_icon() {
 	fi
 	
 	if [[ -a "$path/Contents/Resources/$2.icns" ]]; then
-		echo "Mac will add the App icon automatically ... setting icon not needed."
+		echo "" >/dev/null
 		#replace_icon "/Applications/Browsers/$1" "$path/Contents/Resources/$2.icns"
 	elif [[ -a "$DIR/BrowserIcons/$2.icns" ]]; then
 		replace_icon "/Applications/Browsers/$1" "$DIR/BrowserIcons/$2.icns"
@@ -53,7 +53,7 @@ make_alias() {
 	dir=$(dirname "$2")
 	file=$(basename "$2")
 	rm -rf "$2"
-	/usr/bin/osascript -e "tell application \"Finder\"" -e "set macSrcPath to POSIX file \"$src\" as alias" -e "set macDestPath to POSIX file \"$dir\" as alias" -e "make new alias file to macSrcPath at folder macDestPath" -e "set name of result to \"$file\"" -e "end tell"
+	/usr/bin/osascript -e "tell application \"Finder\"" -e "set macSrcPath to POSIX file \"$src\" as alias" -e "set macDestPath to POSIX file \"$dir\" as alias" -e "make new alias file to macSrcPath at folder macDestPath" -e "set name of result to \"$file\"" -e "end tell" >/dev/null
 }
 
 app() {
@@ -64,18 +64,19 @@ app() {
 		make_alias "$path" "$alias_path"
 		set_icon "$2" "$3"
 	else
-		echo "[ ] $2 ($path)"
+		echo "[ ] $2 - Not installed"
 	fi
 }
 
 vbox() {
+	path="$1.vbox"
 	alias_path="$folder/$2"
-	if [[ -a $1 ]]; then
+	if [[ -a $path ]]; then
 		echo "[x] $2 [VirtualBox]"
-		make_alias "$1" "$alias_path"
+		make_alias "$path" "$alias_path"
 		set_icon "$2" "$3"
 	else
-		echo "[ ] $2 ($1) [VirtualBox]"
+		echo "[ ] $2 [VirtualBox] - Not founds at $path"
 	fi
 }
 
@@ -84,90 +85,111 @@ vmware() {
 	alias_path="$folder/$2"
 	if [[ -a $path ]]; then
 		echo "[x] $2 [VMWare]"
-		make_alias "$path" "$alias_path"
+		#make_alias "$path" "$alias_path"
+		
+		cp "$DIR/vmwarevm" "$alias_path"
+		find="{{vmwarevm}}"
+		sed "s%$find%$path%g" "$alias_path" > "$alias_path.tmp"
+		mv "$alias_path.tmp" "$alias_path"
+		chmod +x "$alias_path"
+		
 		set_icon "$2" "$3"
 	else
-		echo "[ ] $2 ($path) [VMWare]"
+		echo "[ ] $2 [VMWare] - Not founds at $path"
 	fi
 }
 
 # Folders
 folder="/Applications/Browsers"
-mkdir -p $folder/{BlackBerry,Chrome,IE,Firefox,Opera}
+#mkdir -p $folder/{BlackBerry,Chrome,IE,Firefox,Opera} >/dev/null
+mkdir -p $folder/IE >/dev/null
 
 replace_icon "$folder"				"$DIR/BrowserFolderIcon/BrowserFolderIcon.icns"
-replace_icon "$folder/BlackBerry"	"$DIR/BrowserIcons/BlackBerry.icns"
-replace_icon "$folder/Chrome"		"$DIR/BrowserIcons/Chrome.icns"
+#replace_icon "$folder/BlackBerry"	"$DIR/BrowserIcons/BlackBerry.icns"
+#replace_icon "$folder/Chrome"		"$DIR/BrowserIcons/Chrome.icns"
 replace_icon "$folder/IE"			"$DIR/BrowserIcons/IE.icns"
-replace_icon "$folder/Firefox"		"$DIR/BrowserIcons/Firefox.icns"
-replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
+#replace_icon "$folder/Firefox"		"$DIR/BrowserIcons/Firefox.icns"
+#replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
 
 # Get VM folder
 vmdir="/Users/$USER/Virtual Machines"
 
-echo "---> Generating App Aliases"
+echo "---> Generating Aliases"
 app "Android"				"Android"	"Android"
 
 # BlackBerry
-vmware "$vmdir/BlackBerry10Simulator-BB10_1_X"			"BlackBerry/BlackBerry 10"			"BlackBerry"
-vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry/BlackBerry PlayBook"	"BlackBerry"
+vmware "$vmdir/BlackBerry10Simulator-BB10_1_X"			"BlackBerry 10"			"BlackBerry"
+vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry PlayBook"	"BlackBerry"
 
 app "BrowserStack"				"BrowserStack"			"BrowserStack"
 
 # Chrome
-app "Chromium"					"Chrome/Chromium"		"app"
-app "Google Chrome Canary"		"Chrome/Chrome Canary"	"app"
-app "Google Chrome"				"Chrome/Chrome"			"app"
+app "Chromium"					"Chromium"			"app"
+app "Google Chrome Canary"		"Chrome Canary"		"app"
+app "Google Chrome"				"Chrome"			"app"
 
 # Firefox
-app "Firefox"					"Firefox/Firefox"				"firefox"
-app "FirefoxAurora"				"Firefox/Firefox Aurora"		"firefox"
-app "FirefoxNightly"			"Firefox/Firefox Nightly"		"firefox"
-app "B2G"						"Firefox/Boot2Gecko"			"b2g"
+app "Firefox"					"Firefox"				"firefox"
+app "FirefoxAurora"				"Firefox Aurora"		"firefox"
+app "FirefoxNightly"			"Firefox Nightly"		"firefox"
+app "B2G"						"Firefox OS"			"FirefoxOS"		#"b2g"
 
 # IE
-vbox "$vmdir/IE6 - WinXP.ova"			"IE/IE6 - WinXP"	"IE6"
-vbox "$vmdir/IE7 - WinXP.ova"			"IE/IE7 - WinXP"	"IE7"
-vbox "$vmdir/IE8 - WinXP.ova"			"IE/IE8 - WinXP"	"IE8"
-vbox "$vmdir/IE9 - Win7.ova"			"IE/IE9 - Win7"		"IE9"
-vbox "$vmdir/IE10 - Win7.ova"			"IE/IE10 - Win7"	"IE10"
-vbox "$vmdir/IE11 - Win7.ova"			"IE/IE11 - Win7"	"IE11"
-
-# IE
-vbox "/Users/$USER/.ievms/IE6 - WinXP.ova"			"IE/IE6 - WinXP"	"IE6"
-vbox "/Users/$USER/.ievms/IE7 - WinXP.ova"			"IE/IE7 - WinXP"	"IE7"
-vbox "/Users/$USER/.ievms/IE8 - WinXP.ova"			"IE/IE8 - WinXP"	"IE8"
-vbox "/Users/$USER/.ievms/IE9 - Win7.ova"			"IE/IE9 - Win7"		"IE9"
-vbox "/Users/$USER/.ievms/IE10 - Win7.ova"			"IE/IE10 - Win7"	"IE10"
-vbox "/Users/$USER/.ievms/IE11 - Win7.ova"			"IE/IE11 - Win7"	"IE11"
+vbox "$vmdir/IE6 - WinXP/IE6 - WinXP"			"IE/IE6 - WinXP"	"IE6"
+vbox "$vmdir/IE7 - WinXP/IE7 - WinXP"			"IE/IE7 - WinXP"	"IE7"
+vbox "$vmdir/IE8 - WinXP/IE8 - WinXP"			"IE/IE8 - WinXP"	"IE8"
+vbox "$vmdir/IE9 - Win7/IE9 - Win7"				"IE/IE9 - Win7"		"IE9"
+vbox "$vmdir/IE10 - Win7/IE10 - Win7"			"IE/IE10 - Win7"	"IE10"
+vbox "$vmdir/IE11 - Win7/IE11 - Win7"			"IE/IE11 - Win7"	"IE11"
 
 # IE
 vmware "$vmdir/IE6.XP.For.MacVMware"				"IE/IE6 (WinXP)"		"IE6"
 vmware "$vmdir/IE7.Vista.For.MacVMware"				"IE/IE7 (WinVista)"		"IE7"
 vmware "$vmdir/IE8.Win7.For.MacVMware"				"IE/IE8 (Win7)"			"IE8"
-vmware "$vmdir/IE8.WinXP.For.MacVMware"				"IE/IE8 (WinXP)"		"IE8"
+vmware "$vmdir/IE8.XP.For.MacVMware"				"IE/IE8 (WinXP)"		"IE8"
 vmware "$vmdir/IE9.Win7.For.MacVMware"				"IE/IE9 (Win7)"			"IE9"
 vmware "$vmdir/IE10.Win7.For.MacVMware"				"IE/IE10 (Win7)"		"IE10"
 vmware "$vmdir/IE10.Win8.For.MacVMware"				"IE/IE10 (Win8)"		"IE10"
 vmware "$vmdir/IE11.Win7.For.MacVMware"				"IE/IE11 (Win7)"		"IE11"
 vmware "$vmdir/IE11.Win8.1Preview.For.MacVMware"	"IE/IE11 (Win8.1)"		"IE11"
 
-app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iOS Simulator"		"iOS"
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator"		"iOS"
 
 # Opera
-app "Opera"						"Opera/Opera"			"Opera"
-app "Opera Mobile Emulator"		"Opera/Opera Mobile"	"Opera"
-app "Opera Next"				"Opera/Opera Next"		"app-next"
-app "Opera Developer"			"Opera/Opera Developer"	"app-developer"
+app "Opera"						"Opera"			"Opera"
+app "Opera Mobile Emulator"		"Opera Mobile"	"Opera"
+app "Opera Next"				"Opera Next"		"app-next"
+app "Opera Developer"			"Opera Developer"	"app-developer"
 
 app "PhantomJS"					"PhantomJS"				"PhantomJS"
 app "Safari"					"Safari"				"compass"
 app "Sauce"						"Sauce"					"logo"
-app "TorBrowser"				"TorBrowser"			"vidalia"
 app "WebKit"					"WebKit"				"webkit"
 
+# Other
+app "Arora"						"Arora"					"-"
+app "Camino"					"Camino"				"appicon"
+app "OmniWeb"					"OmniWeb"				"OmniWeb"
+app "SeaMonkey"					"SeaMonkey"				"-"
+app "Stainless"					"Stainless"				"Stainless"
+
+app "TorBrowser"				"TorBrowser"			"vidalia"
+
+# Delete any empty folders
+echo -ne "---> Folder clean up ... "
+find /Applications/Browsers -empty -type d -delete
+echo "done"
+
 # Make Vagrant Folder Pretty
-sudo chmod 777 "/Applications/Vagrant"
-replace_icon "/Applications/Vagrant" "$DIR/BrowserIcons/Vagrant.icns"
-sudo chmod 755 "/Applications/Vagrant"
+if [[ -d "/Applications/Vagrant" ]]; then
+	echo -ne "---> Adding custom icon for Vagrant ... "
+	sudo chmod 777 "/Applications/Vagrant"
+	replace_icon "/Applications/Vagrant" "$DIR/BrowserIcons/Vagrant.icns"
+	sudo chmod 755 "/Applications/Vagrant"
+	echo "done"
+fi
+
+echo -ne "---> Adding Folder to Dock ... "
+defaults write com.apple.dock persistent-others -array-add '<dict><key>GUID</key><integer>3463362656</integer><key>tile-type</key><string>directory-tile</string><key>tile-data</key><dict><key>showas</key><integer>0</integer><key>file-type</key><integer>2</integer><key>parent-mod-date</key><integer>3465906513</integer><key>file-data</key><dict><key>_CFURLStringType</key><integer>15</integer><key>_CFURLAliasData</key><data>AAAAAACaAAMAAQAAzWUK2gAASCsAAAAAAFH5fQBnkCwAAM6UaIUAAAAACSD//gAAAAAAAAAA/////wABAAQAUfl9AA4AEgAIAEIAcgBvAHcAcwBlAHIAcwAPABoADABNAGEAYwBpAG4AdABvAHMAaAAgAEgARAASABVBcHBsaWNhdGlvbnMvQnJvd3NlcnMAABMAAS8A//8AAA==</data><key>_CFURLString</key><string>file:///Applications/Browsers/</string></dict><key>displayas</key><integer>1</integer><key>file-label</key><string>Browsers</string><key>file-mod-date</key><integer>3465910413</integer><key>arrangement</key><integer>1</integer><key>preferreditemsize</key><integer>-1</integer></dict></dict></plist>'
+killall Dock
+echo "done"
