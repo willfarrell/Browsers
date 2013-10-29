@@ -64,6 +64,8 @@ Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.githu
 ## [Safari](http://www.apple.com/safari/) (Mac)
 It's built into Mac OS X.
 
+- [Webkit](http://nightly.webkit.org/)
+
 ## [TorBrowser](https://www.torproject.org/download/download) (Mac)
 For testing site using Tor.
 
