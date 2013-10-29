@@ -54,6 +54,7 @@ To run IE a virtual machine is required. IE6 - IE11 are available.
 ## [Opera](http://www.opera.com/) (Mac)
 - [Opera](http://www.opera.com/)
 - [Opera Next](http://www.opera.com/developer/next)
+- [Opera Developer](http://www.opera.com/computer/thanks)
 - [Opera Mobile](http://www.opera.com/developer/mobile-emulator)
 More tools can be found at [dev.opera.com](http://dev.opera.com/)
 

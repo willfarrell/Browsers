@@ -154,6 +154,7 @@ app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/A
 app "Opera"						"Opera/Opera"
 app "Opera Mobile Emulator"		"Opera/Opera Mobile"
 app "Opera Next"				"Opera/Opera Next"
+app "Opera Developer"				"Opera/Opera Developer"
 app "PhantomJS"					"PhantomJS"				"PhantomJS"
 app "Safari"					"Safari"
 app "Sauce"						"Sauce"
