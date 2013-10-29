@@ -3,6 +3,8 @@ A collection of aliases for browsers, services and virtual machine images can be
 
 ![alt text][dockfolder]
 
+Run `./alias` to build `/Applications/Browsers/` forlder of shortcuts to place on Dock. Searches `~/Virtual Machines/` for VMs.
+
 ---
 
 **Launch Dev Tools (Mac):** ⌘ (command) + option + i
@@ -29,6 +31,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 ## [FireFox](http://firefox.com) (Mac)
 - [FireFox](http://firefox.com)
 - [FirefoxAurora](https://www.mozilla.org/en-US/firefox/aurora/)
+- [FirefoxOS](https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator)
 
 ## [Internet Explorer](http://www.modern.ie) (VM)
 To run IE a virtual machine is required. IE6 - IE11 are available.
