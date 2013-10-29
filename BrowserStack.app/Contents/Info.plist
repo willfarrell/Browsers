@@ -395,7 +395,7 @@
 	<key>CFBundleExecutable</key>
 	<string>FluidApp</string>
 	<key>CFBundleIconFile</key>
-	<string>BrowserStack.icns</string>
+	<string>app.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.fluidapp.FluidApp.BrowserStack</string>
 	<key>CFBundleInfoDictionaryVersion</key>

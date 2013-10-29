@@ -5,7 +5,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 replace_icon() {
 	iconSource=$2
 	iconDestination=$1
-	icon=/tmp/`basename $iconSource`
+	icon=/tmp/`basename ${iconSource/ /_}`
 	rsrc=/tmp/icon.rsrc
 	
 	# Create icon from the iconSource
@@ -40,7 +40,8 @@ set_icon() {
 	fi
 	
 	if [[ -a "$path/Contents/Resources/$2.icns" ]]; then
-		replace_icon "/Applications/Browsers/$1" "$path/Contents/Resources/$2.icns"
+		echo "Mac will add the App icon automatically ... setting icon not needed."
+		#replace_icon "/Applications/Browsers/$1" "$path/Contents/Resources/$2.icns"
 	elif [[ -a "$DIR/BrowserIcons/$2.icns" ]]; then
 		replace_icon "/Applications/Browsers/$1" "$DIR/BrowserIcons/$2.icns"
 	fi
@@ -92,18 +93,14 @@ vmware() {
 
 # Folders
 folder="/Applications/Browsers"
+mkdir -p $folder/{BlackBerry,Chrome,IE,Firefox,Opera}
 
-replace_icon $folder "$DIR/BrowserFolderIcon/BrowserFolderIcon.icns"
-mkdir -p "$folder/BlackBerry"
-replace_icon "$folder/BlackBerry" "$DIR/BrowserIcons/BlackBerry.icns"
-mkdir -p "$folder/Chrome"
-replace_icon "$folder/Chrome" "$DIR/BrowserIcons/Chrome.icns"
-mkdir -p "$folder/IE"
-replace_icon "$folder/IE" "$DIR/BrowserIcons/IE.icns"
-mkdir -p "$folder/Firefox"
-replace_icon "$folder/Firefox" "$DIR/BrowserIcons/Firefox.icns"
-mkdir -p "$folder/Opera"
-replace_icon "$folder/Opera" "$DIR/BrowserIcons/Opera.icns"
+replace_icon "$folder"				"$DIR/BrowserFolderIcon/BrowserFolderIcon.icns"
+replace_icon "$folder/BlackBerry"	"$DIR/BrowserIcons/BlackBerry.icns"
+replace_icon "$folder/Chrome"		"$DIR/BrowserIcons/Chrome.icns"
+replace_icon "$folder/IE"			"$DIR/BrowserIcons/IE.icns"
+replace_icon "$folder/Firefox"		"$DIR/BrowserIcons/Firefox.icns"
+replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
 
 # Get VM folder
 vmdir="/Users/$USER/Virtual Machines"
@@ -151,12 +148,15 @@ vmware "$vmdir/IE11.Win8.1Preview.For.MacVMware"	"IE/IE11 (Win8.1)"		"IE11"
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iOS Simulator"		"iOS"
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator"		"iOS"
 
-app "Opera"						"Opera/Opera"
-app "Opera Mobile Emulator"		"Opera/Opera Mobile"
-app "Opera Next"				"Opera/Opera Next"
-app "Opera Developer"			"Opera/Opera Developer"
+app "Opera"						"Opera/Opera"			"Opera"
+app "Opera Mobile Emulator"		"Opera/Opera Mobile"	"Opera"
+app "Opera Next"				"Opera/Opera Next"		"app-next"
+app "Opera Developer"			"Opera/Opera Developer"	"app-developer"
 app "PhantomJS"					"PhantomJS"				"PhantomJS"
-app "Safari"					"Safari"
-app "Sauce"						"Sauce"
-app "TorBrowser"				"TorBrowser"
-app "WebKit"					"WebKit"
+app "Safari"					"Safari"				"compass"
+app "Sauce"						"Sauce"					"logo"
+app "TorBrowser"				"TorBrowser"			"vidalia"
+app "WebKit"					"WebKit"				"webkit"
+
+# Make Vagrant Pretty
+replace_icon "/Applications/Vagrant" "$DIR/BrowserIcons/Vagrant.icns"
