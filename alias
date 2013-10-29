@@ -104,23 +104,28 @@ replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
 
 # Get VM folder
 vmdir="/Users/$USER/Virtual Machines"
-#vmdir="/Users/$USER/.ievms"
 
 echo "---> Generating App Aliases"
 app "Android"				"Android"	"Android"
 
+# BlackBerry
 vmware "$vmdir/BlackBerry10Simulator-BB10_1_X"			"BlackBerry/BlackBerry 10"			"BlackBerry"
 vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry/BlackBerry PlayBook"	"BlackBerry"
 
 app "BrowserStack"				"BrowserStack"			"BrowserStack"
+
+# Chrome
 app "Chromium"					"Chrome/Chromium"		"app"
 app "Google Chrome Canary"		"Chrome/Chrome Canary"	"app"
 app "Google Chrome"				"Chrome/Chrome"			"app"
+
+# Firefox
 app "Firefox"					"Firefox/Firefox"				"firefox"
 app "FirefoxAurora"				"Firefox/Firefox Aurora"		"firefox"
 app "FirefoxNightly"			"Firefox/Firefox Nightly"		"firefox"
-app "B2G"						"Firefox/Boot2Gecko"		"b2g"
+app "B2G"						"Firefox/Boot2Gecko"			"b2g"
 
+# IE
 vbox "$vmdir/IE6 - WinXP.ova"			"IE/IE6 - WinXP"	"IE6"
 vbox "$vmdir/IE7 - WinXP.ova"			"IE/IE7 - WinXP"	"IE7"
 vbox "$vmdir/IE8 - WinXP.ova"			"IE/IE8 - WinXP"	"IE8"
@@ -128,6 +133,7 @@ vbox "$vmdir/IE9 - Win7.ova"			"IE/IE9 - Win7"		"IE9"
 vbox "$vmdir/IE10 - Win7.ova"			"IE/IE10 - Win7"	"IE10"
 vbox "$vmdir/IE11 - Win7.ova"			"IE/IE11 - Win7"	"IE11"
 
+# IE
 vbox "/Users/$USER/.ievms/IE6 - WinXP.ova"			"IE/IE6 - WinXP"	"IE6"
 vbox "/Users/$USER/.ievms/IE7 - WinXP.ova"			"IE/IE7 - WinXP"	"IE7"
 vbox "/Users/$USER/.ievms/IE8 - WinXP.ova"			"IE/IE8 - WinXP"	"IE8"
@@ -135,6 +141,7 @@ vbox "/Users/$USER/.ievms/IE9 - Win7.ova"			"IE/IE9 - Win7"		"IE9"
 vbox "/Users/$USER/.ievms/IE10 - Win7.ova"			"IE/IE10 - Win7"	"IE10"
 vbox "/Users/$USER/.ievms/IE11 - Win7.ova"			"IE/IE11 - Win7"	"IE11"
 
+# IE
 vmware "$vmdir/IE6.XP.For.MacVMware"				"IE/IE6 (WinXP)"		"IE6"
 vmware "$vmdir/IE7.Vista.For.MacVMware"				"IE/IE7 (WinVista)"		"IE7"
 vmware "$vmdir/IE8.Win7.For.MacVMware"				"IE/IE8 (Win7)"			"IE8"
@@ -148,17 +155,19 @@ vmware "$vmdir/IE11.Win8.1Preview.For.MacVMware"	"IE/IE11 (Win8.1)"		"IE11"
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iOS Simulator"		"iOS"
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator"		"iOS"
 
+# Opera
 app "Opera"						"Opera/Opera"			"Opera"
 app "Opera Mobile Emulator"		"Opera/Opera Mobile"	"Opera"
 app "Opera Next"				"Opera/Opera Next"		"app-next"
 app "Opera Developer"			"Opera/Opera Developer"	"app-developer"
+
 app "PhantomJS"					"PhantomJS"				"PhantomJS"
 app "Safari"					"Safari"				"compass"
 app "Sauce"						"Sauce"					"logo"
 app "TorBrowser"				"TorBrowser"			"vidalia"
 app "WebKit"					"WebKit"				"webkit"
 
-# Make Vagrant Pretty
+# Make Vagrant Folder Pretty
 sudo chmod 777 "/Applications/Vagrant"
 replace_icon "/Applications/Vagrant" "$DIR/BrowserIcons/Vagrant.icns"
 sudo chmod 755 "/Applications/Vagrant"
