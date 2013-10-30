@@ -1,4 +1,29 @@
-#!/bin/sh
+#! /bin/sh
+
+# Install phantomjs if needed
+command -v phantomjs >/dev/null 2>&1 || {
+	clear;
+	echo "PhantomJS is missing."
+	echo "a) Download and install from http://phantomjs.org/download.html"
+	echo "b) Auto install now (requires homebrew)"
+	read -n 1 option
+	
+	if [[ $option == 'a' ]]; then
+		exit 1;
+	else
+		command -v brew >/dev/null 2>&1 || {
+			echo "brew: Command required but not found. Aborting." >&2;
+			ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+		}
+		echo "phantomjs: Command required but not found." >&2;
+		brew install phantomjs
+		brew link --overwrite phantomjs
+		
+		#inject cronjob to auto update
+		# see @willfarrell/dotCrontab
+	fi
+}
+
 osascript <<END 
 tell application "Terminal"
 	do script "clear;phantomjs"
