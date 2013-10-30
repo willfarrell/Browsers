@@ -3,7 +3,7 @@ A collection of aliases for browsers, services and virtual machine images can be
 
 ![alt text][dockfolder]
 
-Run `./alias` to build `/Applications/Browsers/` forlder of shortcuts to place on your Dock. Searches `~/Virtual Machines/` for IE VMs.
+Download and run `./alias` to build the `/Applications/Browsers/` forlder of shortcuts for quick access from your Dock. It searches `~/Virtual Machines/` for IE VMs (see `Internet Explorer (VM)` below for automated scripts to set these up). An alias of a VMWare Fusion VMs will display a broken preview icon instead of the expected app icon, to workaround this the alias is replaced with a script to launch the VM image. You may need to change you Terminal settings to prevent lingering Terminal windows from staying open.
 
 ---
 
