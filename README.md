@@ -60,7 +60,7 @@ To run IE a virtual machine is required. IE6 - IE11 are available.
 More tools can be found at [dev.opera.com](http://dev.opera.com/)
 
 ## [PhantomJS](http://phantomjs.org/) (Terminal)
-Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/). There is an installer built-in if you like automation.
+Opens Terminal with phantomjs ready to go. Made with [appify](https://gist.github.com/mathiasbynens/674099)/[appify-UI](https://github.com/subtleGradient/Appify-UI). Requires phantomjs binaries to be installed. To install run `brew update && brew install phantomjs` or visit [phantomjs.org/download.html](http://phantomjs.org/download.html) if you don't use [`brew`](http://mxcl.github.io/homebrew/). There is an installer built-in if you like automation.
 
 ## [Safari](http://www.apple.com/safari/) (Mac)
 - [Safari](http://www.apple.com/downloads/) - It's built into Mac OS X.
