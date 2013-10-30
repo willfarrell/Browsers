@@ -16,6 +16,7 @@ command -v phantomjs >/dev/null 2>&1 || {
 			ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 		}
 		echo "phantomjs: Command required but not found." >&2;
+		brew update
 		brew install phantomjs
 		brew link --overwrite phantomjs
 		
