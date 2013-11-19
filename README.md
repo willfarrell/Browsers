@@ -31,6 +31,7 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 
 ## [Firefox](http://firefox.com) (Mac)
 - [Firefox](http://firefox.com)
+- [Firefox Beta])http://www.mozilla.org/en-US/firefox/channel/)
 - [Firefox Aurora](https://www.mozilla.org/en-US/firefox/aurora/)
 - [Firefox Nightly](http://nightly.mozilla.org/)
 - [Firefox OS](https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator)
