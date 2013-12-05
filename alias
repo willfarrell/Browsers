@@ -101,15 +101,15 @@ vmware() {
 
 # Folders
 folder="/Applications/Browsers"
-#mkdir -p $folder/{BlackBerry,Chrome,IE,Firefox,Opera} >/dev/null
-mkdir -p $folder/IE >/dev/null
+mkdir -p $folder/{BlackBerry,Chrome,IE,Firefox,Opera} >/dev/null
+#mkdir -p $folder/IE >/dev/null
 
 replace_icon "$folder"				"$DIR/BrowserFolderIcon/BrowserFolderIcon.icns"
 #replace_icon "$folder/BlackBerry"	"$DIR/BrowserIcons/BlackBerry.icns"
-#replace_icon "$folder/Chrome"		"$DIR/BrowserIcons/Chrome.icns"
+replace_icon "$folder/Chrome"		"$DIR/BrowserIcons/Chrome.icns"
 replace_icon "$folder/IE"			"$DIR/BrowserIcons/IE.icns"
-#replace_icon "$folder/Firefox"		"$DIR/BrowserIcons/Firefox.icns"
-#replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
+replace_icon "$folder/Firefox"		"$DIR/BrowserIcons/Firefox.icns"
+replace_icon "$folder/Opera"		"$DIR/BrowserIcons/Opera.icns"
 
 # Get VM folder
 vmdir="/Users/$USER/Virtual Machines"
@@ -124,42 +124,45 @@ vmware "$vmdir/BlackBerryPlayBookSimulator-2.1.0"		"BlackBerry PlayBook"	"BlackB
 app "BrowserStack"				"BrowserStack"			"BrowserStack"
 
 # Chrome
-app "Chromium"					"Chromium"			"app"
-app "Google Chrome Canary"		"Chrome Canary"		"app"
-app "Google Chrome"				"Chrome"			"app"
+app "Chromium"					"Chrome/Chromium"			"app"
+app "Google Chrome Canary"		"Chrome/Chrome Canary"		"app"
+app "Google Chrome"				"Chrome/Chrome"				"app"
+app "Google Chrome Beta"		"Chrome/Chrome Beta"		"app" # RENAME REQUIRED
+app "Google Chrome Dev"			"Chrome/Chrome Dev"			"app" # RENAME REQUIRED
 
 # Firefox
-app "Firefox"					"Firefox"				"firefox"
-app "FirefoxAurora"				"Firefox Aurora"		"firefox"
-app "FirefoxNightly"			"Firefox Nightly"		"firefox"
-app "B2G"						"Firefox OS"			"FirefoxOS"		#"b2g"
+app "Firefox"					"Firefox/Firefox"				"firefox"
+app "FirefoxBeta"				"Firefox/Firefox Beta"			"firefox" # RENAME REQUIRED
+app "FirefoxAurora"				"Firefox/Firefox Aurora"		"firefox"
+app "FirefoxNightly"			"Firefox/Firefox Nightly"		"firefox"
+app "B2G"						"Firefox/Firefox OS"			"FirefoxOS"		#"b2g"
 
 # IE
-vbox "$vmdir/IE6 - WinXP/IE6 - WinXP"			"IE/IE6 (XP)"	"IE6"
-vbox "$vmdir/IE7 - WinXP/IE7 - WinXP"			"IE/IE7 (XP)"	"IE7"
-vbox "$vmdir/IE8 - WinXP/IE8 - WinXP"			"IE/IE8 (XP)"	"IE8"
-vbox "$vmdir/IE9 - Win7/IE9 - Win7"				"IE/IE9 (Win7)"	"IE9"
+vbox "$vmdir/IE6 - WinXP/IE6 - WinXP"			"IE/IE6 (XP)"		"IE6"
+vbox "$vmdir/IE7 - WinXP/IE7 - WinXP"			"IE/IE7 (XP)"		"IE7"
+vbox "$vmdir/IE8 - WinXP/IE8 - WinXP"			"IE/IE8 (XP)"		"IE8"
+vbox "$vmdir/IE9 - Win7/IE9 - Win7"				"IE/IE9 (Win7)"		"IE9"
 vbox "$vmdir/IE10 - Win7/IE10 - Win7"			"IE/IE10 (Win7)"	"IE10"
 vbox "$vmdir/IE11 - Win7/IE11 - Win7"			"IE/IE11 (Win7)"	"IE11"
 
 # IE
 vmware "$vmdir/IE6.XP.For.MacVMware"				"IE/IE6 (XP)"		"IE6"
-vmware "$vmdir/IE7.Vista.For.MacVMware"				"IE/IE7 (Vista)"		"IE7"
-vmware "$vmdir/IE8.Win7.For.MacVMware"				"IE/IE8 (Win7)"			"IE8"
+vmware "$vmdir/IE7.Vista.For.MacVMware"				"IE/IE7 (Vista)"	"IE7"
+vmware "$vmdir/IE8.Win7.For.MacVMware"				"IE/IE8 (Win7)"		"IE8"
 vmware "$vmdir/IE8.XP.For.MacVMware"				"IE/IE8 (XP)"		"IE8"
-vmware "$vmdir/IE9.Win7.For.MacVMware"				"IE/IE9 (Win7)"			"IE9"
-vmware "$vmdir/IE10.Win7.For.MacVMware"				"IE/IE10 (Win7)"		"IE10"
-vmware "$vmdir/IE10.Win8.For.MacVMware"				"IE/IE10 (Win8)"		"IE10"
-vmware "$vmdir/IE11.Win7.For.MacVMware"				"IE/IE11 (Win7)"		"IE11"
-vmware "$vmdir/IE11.Win8.1Preview.For.MacVMware"	"IE/IE11 (Win8.1)"		"IE11"
+vmware "$vmdir/IE9.Win7.For.MacVMware"				"IE/IE9 (Win7)"		"IE9"
+vmware "$vmdir/IE10.Win7.For.MacVMware"				"IE/IE10 (Win7)"	"IE10"
+vmware "$vmdir/IE10.Win8.For.MacVMware"				"IE/IE10 (Win8)"	"IE10"
+vmware "$vmdir/IE11.Win7.For.MacVMware"				"IE/IE11 (Win7)"	"IE11"
+vmware "$vmdir/IE11.Win8.1Preview.For.MacVMware"	"IE/IE11 (Win8.1)"	"IE11"
 
 app "Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone Simulator"		"iOS"
 
 # Opera
-app "Opera"						"Opera"			"Opera"
-app "Opera Mobile Emulator"		"Opera Mobile"	"Opera"
-app "Opera Next"				"Opera Next"		"app-next"
-app "Opera Developer"			"Opera Developer"	"app-developer"
+app "Opera"						"Opera/Opera"			"Opera"
+app "Opera Mobile Emulator"		"Opera/Opera Mobile"	"Opera"
+app "Opera Next"				"Opera/Opera Next"		"app-next"
+app "Opera Developer"			"Opera/Opera Developer"	"app-developer"
 
 app "PhantomJS"					"PhantomJS"				"PhantomJS"
 app "Safari"					"Safari"				"compass"
