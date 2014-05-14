@@ -155,6 +155,7 @@ Google **C**hrome, Mozilla **F**irefox, Microsoft **I**nternet Explorer, **O**pe
 - [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) - Validate and view JSON documents
 - [LiveReload](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei) - Provides Chrome browser integration for the official LiveReload apps (Mac & Windows) and third-parties like guard-livereload and…
 - [My Travis](https://chrome.google.com/webstore/detail/my-travis/ddlafmkcenhiahiikbgjemcbdengmjbg) - Monitor your projects builds from Travis CI within Chrome.
+- [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) - Folder view of github repo tree.
 - [Page Benchmarker](https://chrome.google.com/webstore/detail/page-benchmarker/channimfdomahekjcahlbpccbgaopjll/details?hl=en) - Chromium Page Benchmarker.
 - [PageSpeed Insights (by Google)](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli) - PageSpeed Insights analyzes the performance of your web pages and provides suggestions to make them faster.
 - [Pendule](https://chrome.google.com/webstore/detail/pendule/gbkffbkamcejhkcaocmkdeiiccpmjfdi) - Web developer tools for Chrome.
