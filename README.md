@@ -29,11 +29,12 @@ VMware Fusion is required, virtual machines can be found at [developer.blackberr
 - [Chromium](http://www.macupdate.com/app/mac/36244/chromium) & the updater [Chromatic](http://www.macupdate.com/app/mac/32856/chromatic)
 - [Chromium Benchmark](Google%20Chrome%20Incognito.app) - Open Chromium with --enable-benchmarking --enable-stats-table --enable-extension-timeline-api. Made with [appify](https://gist.github.com/mathiasbynens/674099).
 
-## [Firefox](http://firefox.com) (Mac)
-- [Firefox](http://firefox.com)
-- [Firefox Beta](http://www.mozilla.org/en-US/firefox/channel/)
+## [Firefox](https://firefox.com) (Mac)
+- [Firefox](https://firefox.com)
+- [Firefox Beta](https://www.mozilla.org/en-US/firefox/channel/)
 - [Firefox Aurora](https://www.mozilla.org/en-US/firefox/aurora/)
-- [Firefox Nightly](http://nightly.mozilla.org/)
+- [Firefox Nightly](https://nightly.mozilla.org/)
+- [FirefoxDeveloperEdition](https://www.mozilla.org/en-US/firefox/developer/)
 - [Firefox OS](https://developer.mozilla.org/en-US/docs/Tools/Firefox_OS_Simulator)
 - [Firefox Boot2Gecko w/ Gaia](https://ftp.mozilla.org/pub/mozilla.org/b2g/nightly/latest-mozilla-central/)
  - [source](https://github.com/mozilla-b2g/gaia)
