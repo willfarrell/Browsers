@@ -15,7 +15,7 @@ replace_icon() {
 	sips -i $icon >/dev/null
 
 	# Take that icon and put it into a rsrc file
-	DeRez -only icns $icon > $rsrc 
+	DeRez -only icns $icon > $rsrc
 
 	# Apply the rsrc file to
 	SetFile -a C "$iconDestination"
@@ -38,7 +38,7 @@ set_icon() {
 		echo "sips -s format icns \"$DIR/BrowserIconsSrc/$2.png\" --out \"$DIR/BrowserIcons/$2.icns\""
 		sips -s format icns "$DIR/BrowserIconsSrc/$2.png" --out "$DIR/BrowserIcons/$2.icns"
 	fi
-	
+
 	if [[ -a "$path/Contents/Resources/$2.icns" ]]; then
 		echo "" >/dev/null
 		#replace_icon "/Applications/Browsers/$1" "$path/Contents/Resources/$2.icns"
@@ -86,13 +86,13 @@ vmware() {
 	if [[ -a $path ]]; then
 		echo "[x] $2 [VMWare]"
 		#make_alias "$path" "$alias_path"
-		
+
 		cp "$DIR/vmwarevm" "$alias_path"
 		find="{{vmwarevm}}"
 		sed "s%$find%$path%g" "$alias_path" > "$alias_path.tmp"
 		mv "$alias_path.tmp" "$alias_path"
 		chmod +x "$alias_path"
-		
+
 		set_icon "$2" "$3"
 	else
 		echo "[ ] $2 [VMWare] - Not founds at $path"
@@ -135,6 +135,7 @@ app "Firefox"					"Firefox/Firefox"				"firefox"
 app "FirefoxBeta"				"Firefox/Firefox Beta"			"firefox" # RENAME REQUIRED
 app "FirefoxAurora"				"Firefox/Firefox Aurora"		"firefox"
 app "FirefoxNightly"			"Firefox/Firefox Nightly"		"firefox"
+app "FirefoxDeveloperEdition"	"Firefox/Firefox Developer Edition"	"firefox"
 app "B2G"						"Firefox/Firefox OS"			"FirefoxOS"		#"b2g"
 
 # IE
